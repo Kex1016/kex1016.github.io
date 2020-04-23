@@ -220,3 +220,8 @@
     filter: brightness(0.4) !important;
     border-radius: 0;
 }
+
+.charCounter-7fw40k.charcounter.normal {
+    right: -5em;
+    bottom: 0;
+}
