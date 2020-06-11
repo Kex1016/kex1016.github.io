@@ -97,7 +97,8 @@
 
 /* Transparent panels */
 .overview[data-v-2cf72664] .content-wrap,
-.wrap[data-v-568e7548] {
+.wrap[data-v-568e7548],
+.reply[data-v-0bf5aadf] {
     background: transparent;
 }
 
@@ -373,6 +374,11 @@
     -moz-box-shadow: 0px 0px 20px 3px rgb(var(--color-blue));
     box-shadow: 0px 0px 20px 3px rgb(var(--color-blue));
     background-position: 0 0;
+}
+
+/* remove 'using custom css' notice */
+.about[data-v-2cf72664] .markdown h5 a {
+    display: none;
 }
 
 /* avatar background animation */
