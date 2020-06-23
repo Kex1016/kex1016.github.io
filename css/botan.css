@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Patrick+Hand&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+/* Force dark theme & New colors */
+:root,
+.site-theme-dark,
+.site-theme-contrast {
+    --color-background: 39, 39, 39;
+    --color-foreground: 38, 34, 34;
+    --color-foreground-grey: 31, 31, 31;
+    --color-foreground-grey-dark: 6, 12, 19;
+    --color-foreground-blue: 15, 22, 31;
+    --color-foreground-blue-dark: 6, 12, 19;
+    --color-text: 159, 173, 189;
+    --color-text-light: 114, 138, 161;
+    --color-text-lighter: 133, 150, 165;
+    --color-shadow-blue: 0, 5, 15;
+    --color-background-1200: 251, 251, 251;
+    --color-background-1100: 240, 243, 246;
+    --color-background-1000: 221, 230, 238;
+    --color-background-900: 201, 215, 227;
+    --color-background-800: 173, 192, 210;
+    --color-background-700: 139, 160, 178;
+    --color-background-600: 116, 136, 153;
+    --color-background-500: 100, 115, 128;
+    --color-background-400: 81, 97, 112;
+    --color-background-300: 30, 42, 56;
+    --color-background-100: 26, 26, 26;
+    --color-background-200: 39, 39, 39;
+    --color-gray-1200: 251, 251, 251;
+    --color-gray-1100: 240, 243, 246;
+    --color-gray-1000: 221, 230, 238;
+    --color-gray-900: 201, 215, 227;
+    --color-gray-800: 173, 192, 210;
+    --color-gray-700: 139, 160, 178;
+    --color-gray-600: 116, 136, 153;
+    --color-gray-500: 100, 115, 128;
+    --color-gray-400: 81, 97, 112;
+    --color-gray-300: 30, 42, 56;
+    --color-gray-100: 21, 31, 46;
+    --color-gray-200: 11, 22, 34;
+
+    --kex-text: 255, 255, 255;
+    --kex-text-light: 155, 166, 175;
+
+    --color-text: var(--kex-text);
+    --color-text-light: var(--kex-text);
+}
+
+/* Colors */
+:root,
+.user-page-unscoped.orange,
+.site-theme-dark .user-page-unscoped.orange,
+.site-theme-contrast .user-page-unscoped.orange {
+    --color-blue: 156, 156, 156;
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgba(74, 69, 69, 0.4), rgba(88, 80, 80, 0.4));
+    outline: 1px solid rgb(136, 93, 0);
+    border-radius: 10px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Felt';
+    src: url('https://kex1016.github.io/fonts/FeltRegular.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/FeltRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'augie';
+    src: url('https://kex1016.github.io/fonts/Augie.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/Augie.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manga Temple';
+    src: url('https://kex1016.github.io/fonts/MangaTemple.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/MangaTemple.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manga Temple';
+    src: url('https://kex1016.github.io/fonts/MangaTempleBold.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/MangaTempleBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wild Words';
+    src: url('https://kex1016.github.io/fonts/WildWordsBoldItalic.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/WildWordsBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wild Words';
+    src: url('https://kex1016.github.io/fonts/WildWordsItalic.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/WildWordsItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manga Temple';
+    src: url('https://kex1016.github.io/fonts/MangaTempleItalic.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/MangaTempleItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wild Words';
+    src: url('https://kex1016.github.io/fonts/WildWordsRoman.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/WildWordsRoman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wild Words';
+    src: url('https://kex1016.github.io/fonts/WildWordsBold-Bold.woff2') format('woff2'),
+        url('https://kex1016.github.io/fonts/WildWordsBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* banner */
+.banner[data-v-5445dac8] {
+    background-image: url('https://files.weebsquad.moe/VWia28lj.png') !important;
+}
+
+/* footer */
+.footer[data-v-82d0a8cc] {
+    background: rgb(var(--color-foreground));
+}
+
+/* After my username */
+.name[data-v-5445dac8]::after {
+    content: "Hi!";
+    font-family: 'Wild Words';
+    position: relative;
+    left: 10px;
+    top: -1px;
+    background-color: transparent;
+    background-image: url('https://files.weebsquad.moe/rrKgCAVK.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 5px 8px;
+    margin-bottom: 20px;
+    margin-right: 16px;
+    font-size: 1.2rem;
+}
+
+/* Follow button */
+.nav-btn[data-v-5445dac8] {
+    font-family: 'Wild Words';
+    background-color: white;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border: 2px solid #000;
+    color: black;
+    text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+.nav-btn[data-v-5445dac8]:hover {
+    background-color: white;
+}
+
+/* dropdown with block and report buttons */
+.dropdown[data-v-5445dac8] {
+    color: black;
+    background-color: transparent;
+    background-image: url('https://files.weebsquad.moe/LaBFeCL9.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dropdown[data-v-5445dac8]:hover {
+    color: black;
+    background-color: transparent;
+    background-image: url('https://files.weebsquad.moe/LaBFeCL9.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.el-icon-arrow-down[data-v-5445dac8]:before {
+    content: "\E603";
+    text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+/* Disable 'follows you' badge */
+.follower-badge[data-v-5445dac8] {
+    display: none;
+}
+
+/* remove 'using custom css' notice */
+.about[data-v-2cf72664] .markdown h5 a {
+    display: none;
+}
+
+/* AL Logo replacement */
+.logo img[data-v-4fbac4e1] {
+    height: 50px;
+    width: auto;
+    content: url(https://files.weebsquad.moe/6thojTOk.png);
+}
+
+/* navbar */
+.site-theme-dark .nav-unscoped.transparent {
+    background: rgba(var(--color-foreground), .5);
+}
+
+.site-theme-dark .nav-unscoped.transparent:hover {
+    background: rgba(var(--color-foreground), .8);
+}
+
+.site-theme-dark .nav-unscoped {
+    background: rgba(var(--color-foreground), 1);
+}
+
+/* Links in navbar and below banner */
+.link[data-v-4fbac4e1],
+.nav .link[data-v-5445dac8] {
+    font-family: 'augie';
+    font-weight: 900;
+    color: #000;
+    text-shadow: rgb(255, 255, 255) 3px 0px 0px, rgb(255, 255, 255) 2.83487px 0.981584px 0px, rgb(255, 255, 255) 2.35766px 1.85511px 0px, rgb(255, 255, 255) 1.62091px 2.52441px 0px, rgb(255, 255, 255) 0.705713px 2.91581px 0px, rgb(255, 255, 255) -0.287171px 2.98622px 0px, rgb(255, 255, 255) -1.24844px 2.72789px 0px, rgb(255, 255, 255) -2.07227px 2.16926px 0px, rgb(255, 255, 255) -2.66798px 1.37182px 0px, rgb(255, 255, 255) -2.96998px 0.42336px 0px, rgb(255, 255, 255) -2.94502px -0.571704px 0px, rgb(255, 255, 255) -2.59586px -1.50383px 0px, rgb(255, 255, 255) -1.96093px -2.27041px 0px, rgb(255, 255, 255) -1.11013px -2.78704px 0px, rgb(255, 255, 255) -0.137119px -2.99686px 0px, rgb(255, 255, 255) 0.850987px -2.87677px 0px, rgb(255, 255, 255) 1.74541px -2.43999px 0px, rgb(255, 255, 255) 2.44769px -1.73459px 0px, rgb(255, 255, 255) 2.88051px -0.838247px 0px;
+}
+
+/* below banner links hover */
+.nav .link[data-v-5445dac8]:hover {
+    color: #d3d5f3;
+}
+
+/* custom search button */
+.search[data-v-4fbac4e1] {
+    cursor: pointer;
+}
+
+.search[data-v-4fbac4e1] svg {
+    display: none;
+}
+
+.search[data-v-4fbac4e1]::after {
+    content: '';
+    color: transparent;
+    background-image: url(https://files.weebsquad.moe/OZPYVOSr.png);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    transition: .2s;
+}
+
+.search[data-v-4fbac4e1]:hover::after {
+    content: '';
+    color: transparent;
+    background-image: url(https://files.weebsquad.moe/OZPYVOSr.png);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    filter: brightness(1.7);
+}
+
+/* svg elements */
+.user .chevron[data-v-4fbac4e1],
+.markdown-editor>div {
+    font-weight: 900;
+    color: #000;
+    stroke: #fff;
+    stroke-width: 30px;
+}
+
+.markdown-editor>[title="Image"],
+.markdown-editor>[title="Youtube Video"],
+.markdown-editor>[title="WebM Video"] {
+    color: rgb(99, 0, 0);
+}
+
+/* section headers and username */
+.section-header[data-v-514856af],
+.section-header[data-v-aedb6876],
+.section-header[data-v-45543a61],
+.medialist.table .section-name,
+.name[data-v-5445dac8],
+.section-header[data-v-93c5960c],
+.section-header[data-v-09492909] {
+    font-family: 'augie';
+    font-weight: 900;
+    color: #000;
+    text-shadow: rgb(255, 255, 255) 3px 0px 0px, rgb(255, 255, 255) 2.83487px 0.981584px 0px, rgb(255, 255, 255) 2.35766px 1.85511px 0px, rgb(255, 255, 255) 1.62091px 2.52441px 0px, rgb(255, 255, 255) 0.705713px 2.91581px 0px, rgb(255, 255, 255) -0.287171px 2.98622px 0px, rgb(255, 255, 255) -1.24844px 2.72789px 0px, rgb(255, 255, 255) -2.07227px 2.16926px 0px, rgb(255, 255, 255) -2.66798px 1.37182px 0px, rgb(255, 255, 255) -2.96998px 0.42336px 0px, rgb(255, 255, 255) -2.94502px -0.571704px 0px, rgb(255, 255, 255) -2.59586px -1.50383px 0px, rgb(255, 255, 255) -1.96093px -2.27041px 0px, rgb(255, 255, 255) -1.11013px -2.78704px 0px, rgb(255, 255, 255) -0.137119px -2.99686px 0px, rgb(255, 255, 255) 0.850987px -2.87677px 0px, rgb(255, 255, 255) 1.74541px -2.43999px 0px, rgb(255, 255, 255) 2.44769px -1.73459px 0px, rgb(255, 255, 255) 2.88051px -0.838247px 0px;
+}
+
+/* reset filter stuff */
+.section-header[data-v-09492909] .el-dropdown {
+    text-shadow: none;
+    color: rgb(var(--color-text-lighter));
+}
+
+/* milestone stats */
+.stat .value[data-v-815ccddc] {
+    font-weight: 900;
+    color: #000;
+    text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+}
+
+/* milestone bar */
+.user-page-unscoped.orange .progress .bar,
+.progress .bar[data-v-815ccddc] {
+    background: linear-gradient(270deg, #ffffff, rgb(var(--color-blue)));
+    border-radius: 0 20px 500px 4px;
+}
+
+/* FONTS */
+/* - Augie */
+.stat .value[data-v-815ccddc],
+.milestones .milestone[data-v-815ccddc],
+.dropdown[data-v-38edf8f8],
+.dropdown[data-v-0bb70ffa],
+.name[data-v-aedb6876],
+.el-dropdown-menu--small .el-dropdown-menu__item,
+.wrap[data-v-568e7548],
+.overview[data-v-2cf72664] .content-wrap,
+.wrap[data-v-568e7548],
+.browse-wrap[data-v-4fbac4e1] .dropdown,
+.user-wrap[data-v-4fbac4e1] .dropdown,
+.site-theme-dark .quick-search.el-select .el-input.el-input__inner,
+.site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner,
+.site-theme-dark .el-select-dropdown,
+.site-theme-dark .el-dropdown-menu,
+.site-theme-dark .el-dropdown-menu__item--divided::before,
+.input-shadow .el-input__inner,
+.reply[data-v-0bf5aadf],
+.el-input,
+.el-textarea,
+.markdown-editor,
+.name[data-v-aedb6876],
+.medialist.table .list-section,
+.filters-wrap[data-v-128c06f0],
+.el-input__inner {
+    font-family: 'augie';
+}
+
+/* - Wild Words */
+.stat .label[data-v-815ccddc],
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.button.cancel,
+.button.save,
+.list-head.row {
+    font-family: 'Wild Words';
+}
+
+/* dropdown links */
+.primary-link-text[data-v-38edf8f8],
+.primary-link[data-v-0bb70ffa] .label {
+    font-weight: 900;
+    color: #000;
+    text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+
+    transition: color .2s ease;
+}
+
+.primary-link[data-v-0bb70ffa] .label:hover {
+    color: rgb(var(--color-gray-900));
+}
+
+/* dropdown backgrounds */
+.site-theme-dark .quick-search.el-select .el-input.el-input__inner,
+.site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner,
+.site-theme-dark .el-select-dropdown,
+.site-theme-dark .el-dropdown-menu,
+.site-theme-dark .el-dropdown-menu__item--divided::before {
+    background: rgb(var(--color-foreground));
+}
+
+/* Comicify(?) */
+.overview[data-v-2cf72664] .content-wrap,
+.wrap[data-v-568e7548],
+.browse-wrap[data-v-4fbac4e1] .dropdown,
+.user-wrap[data-v-4fbac4e1] .dropdown,
+.site-theme-dark .quick-search.el-select .el-input.el-input__inner,
+.site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner,
+.site-theme-dark .el-select-dropdown,
+.site-theme-dark .el-dropdown-menu,
+.site-theme-dark .el-dropdown-menu__item--divided::before,
+.input-shadow .el-input__inner,
+.reply[data-v-0bf5aadf],
+.el-input,
+.el-textarea,
+.markdown-editor,
+.name[data-v-aedb6876],
+.medialist.table .list-section,
+.el-input.is-focus,
+.filter-group .active[data-v-128c06f0],
+.tooltip[data-v-9401173e] {
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+/* media list - focused elements */
+.el-select .el-input__inner:focus,
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: transparent;
+}
+
+/* - list heads */
+.list-head.row {
+    color: #fff;
+}
+
+/* - counts */
+.medialist .filters .filter-group:first-child>span .count {
+    margin-right: 10px;
+}
+
+/* - textareas */
+.input[data-v-93c5960c] .el-textarea__inner {
+    background: transparent;
+}
+
+/* - favorites */
+.favourites.preview .favourites-wrap .favourite[data-v-45543a61],
+.favourites.preview .favourites-wrap>div[data-v-45543a61] {
+    border-bottom-left-radius: 290px 15px;
+    border-bottom-right-radius: 15px 225px;
+    border-top-left-radius: 15px 255px;
+    border-top-right-radius: 225px 15px;
+    border: 2px solid #000;
+}
+
+/* tooltips */
+.tooltip[data-v-9401173e] {
+    background-color: rgba(var(--color-overlay), 1);
+    color: black;
+    transition: opacity .26s ease-in-out, transform .4s ease-in-out;
+}
+
+.tooltip[data-v-9401173e]:after {
+    display: none;
+}
+
+.title[data-v-9401173e] {
+    background: transparent;
+}
+
+/* various dropdowns */
+.el-dropdown-menu__item,
+.el-select-dropdown__item {
+    transition: color .2s ease, background .2s ease;
+}
+
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover,
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+    background: rgb(var(--color-blue), 0.4);
+    color: black;
+}
+
+/* Headings */
+.markdown h1 {
+    margin-left: 5px;
+    font-weight: 900;
+    color: #000;
+    text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+}
+
+.markdown h5 {
+    animation-name: rainbowtext;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+/* Buttons */
+.button.cancel,
+.button.save,
+.random-btn[data-v-128c06f0] {
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    transition: all 235ms ease 0s;
+    box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, .2);
+    transition: all 235ms ease-in-out 0s;
+    align-self: center;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+.button.save,
+.random-btn[data-v-128c06f0] {
+    background: rgba(var(--color-blue), 0.5);
+}
+
+.button.cancel:hover,
+.button.save:hover,
+.random-btn[data-v-128c06f0]:hover {
+    -webkit-transform: translate3d(0, 2px, 0);
+    transform: translate3d(0, 2px, 0);
+    box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, .3);
+}
+
+/* activity dots */
+.history-day[data-v-514856af] {
+    border-radius: 0;
+    border: 2px black solid;
+}
+
+.history-day.lv-1[data-v-514856af] {
+    background: rgba(var(--color-blue), .1);
+}
+
+.history-day.lv-2[data-v-514856af] {
+    background: rgba(var(--color-blue), .3);
+}
+
+/* avatar background animation */
+@keyframes avatarbg {
+    0% {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 100%;
+    }
+}
+
+/* rainbow text */
+@keyframes rainbowtext {
+    0% {
+        color: rgba(0, 105, 255, .71)
+    }
+
+    10% {
+        color: rgba(100, 0, 255, .71)
+    }
+
+    20% {
+        color: rgba(255, 0, 139, .71)
+    }
+
+    30% {
+        color: rgba(255, 0, 0, .71)
+    }
+
+    40% {
+        color: rgba(255, 96, 0, .71)
+    }
+
+    50% {
+        color: rgba(202, 255, 0, .71)
+    }
+
+    60% {
+        color: rgba(0, 255, 139, .71)
+    }
+
+    70% {
+        color: rgba(202, 255, 0, .71)
+    }
+
+    80% {
+        color: rgba(255, 96, 0, .71)
+    }
+
+    85% {
+        color: rgba(255, 0, 0, .71)
+    }
+
+    90% {
+        color: rgba(255, 0, 139, .71)
+    }
+
+    95% {
+        color: rgba(100, 0, 255, .71)
+    }
+
+    to {
+        color: rgba(0, 105, 255, .71)
+    }
+}
