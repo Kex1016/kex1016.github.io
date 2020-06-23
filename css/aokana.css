@@ -1,0 +1,166 @@
+/******************************
+ * Made this theme for Aokana *
+ ******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@400;700&display=swap');
+
+:root {
+    --c-green: rgb(33, 95, 255);
+
+}
+
+/* Change general font to Merienda */
+*,
+.input[data-v-93c5960c] .el-textarea__inner {
+    font-family: 'Merienda', cursive;
+}
+
+/* scrollbars */
+*::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(29, 103, 217, 0.3);
+    outline: 1px solid rgba(29, 103, 217, 0.2);
+    border-radius: 10px;
+}
+
+/* Username */
+.name[data-v-5445dac8] {
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    text-shadow: 0px 0px 20px #1D67D9, 2px 0px 20px #1D67D9, 0px 2px 20px #1D67D9, 2px 2px 20px #1D67D9, -2px -2px 16px #1D67D9, 0px -2px 20px #1D67D9, -2px 0px 20px #1D67D9;
+    font-size: 40px;
+
+}
+
+/* favorites */
+.favourites.preview .favourites-wrap .favourite[data-v-45543a61],
+.favourites.preview .favourites-wrap>div[data-v-45543a61] {
+    transform: scale(1);
+    transition: 0.2s;
+
+}
+
+/* Fonts */
+/* - Name and category titles */
+.name[data-v-5445dac8],
+.overview[data-v-2cf72664] .section-header {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 400 !important;
+    color: white;
+    text-shadow: 0px 0px 14px rgb(29, 103, 217);
+}
+
+/* - Section headers at center */
+.section-header[data-v-45543a61] {
+    align-items: center;
+    justify-content: center;
+}
+
+/* profile navbar */
+.nav-wrap[data-v-5445dac8] {
+    border-bottom: solid 1px var(--c-green);
+    border-top: solid 1px var(--c-green);
+    background: linear-gradient(180deg, rgba(29, 103, 217, 0.3) 0%, rgba(29, 103, 217, 0) 100%);
+}
+
+/* branding */
+
+
+/* Borders */
+/* - 1px borders */
+.about .content-wrap[data-v-2cf72664],
+.activity-entry[data-v-568e7548],
+.reply[data-v-0bf5aadf],
+.activity-edit,
+.el-input,
+.el-textarea,
+.overview[data-v-2cf72664] .content-wrap {
+    border: solid 1px var(--c-green);
+    border-radius: 5px;
+}
+
+/* maybe fix for side things not showing */
+.wrap[data-v-568e7548] {
+    border-right: solid 1px var(--c-green);
+    border-radius: 0;
+}
+
+/* - textarea and preview having s m o o t h borders */
+.el-textarea,
+.activity-entry[data-v-568e7548].preview,
+.reply[data-v-0bf5aadf].preview {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+/* Transparent stuff */
+.about .content-wrap[data-v-2cf72664],
+.activity-entry[data-v-568e7548] .wrap,
+.reply[data-v-0bf5aadf],
+.markdown-editor,
+.el-input-group__append,
+.el-input-group__prepend,
+.el-input__inner,
+.el-textarea__inner,
+.el-input,
+.overview[data-v-2cf72664] .content-wrap {
+    background: transparent;
+}
+
+/* textarea */
+.el-textarea {
+    background: rgba(29, 103, 217, 0.2);
+}
+
+/* Other stuff */
+/* - New activity */
+.actions[data-v-93c5960c] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.input[data-v-93c5960c] {
+    margin-bottom: 0;
+}
+
+.activity-edit {
+    margin-bottom: 20px;
+    transition: .2s;
+}
+
+.activity-edit>* {
+    transition: .2s;
+}
+
+/* markdown editor spacing */
+.markdown-editor {
+    margin-top: 10px;
+}
+
+/* Decrease general font size in bio */
+.about .content-wrap[data-v-2cf72664] h1 {
+    font-size: 1.7rem;
+}
+
+.about .content-wrap[data-v-2cf72664] p {
+    font-size: 1.30rem;
+}
+
+/* fix favorites hover event */
+.favourites-wrap[data-v-45543a61] {
+    overflow: visible;
+}
+
+/* s h a d o w s for the favorites */
+.favourites.preview .favourites-wrap .favourite[data-v-45543a61],
+.favourites.preview .favourites-wrap>div[data-v-45543a61] {
+    border: 2px var(--c-green) solid;
+    box-shadow: 0px 0px 30px -5px var(--c-green);
+}
