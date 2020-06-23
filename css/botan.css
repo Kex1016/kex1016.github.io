@@ -564,6 +564,11 @@
     overflow: visible;
 }
 
+/* fav studios bg */
+.site-theme-dark .overview .favourite.studio {
+    background-color: rgb(var(--color-foreground));
+}
+
 /* avatar background animation */
 @keyframes avatarbg {
     0% {
