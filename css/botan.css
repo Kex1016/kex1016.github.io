@@ -6,6 +6,7 @@
 .site-theme-contrast {
     --color-background: 39, 39, 39;
     --color-foreground: 38, 34, 34;
+    --color-overlay: 33, 33, 33;
     --color-foreground-grey: 31, 31, 31;
     --color-foreground-grey-dark: 6, 12, 19;
     --color-foreground-blue: 15, 22, 31;
@@ -556,6 +557,11 @@
 
 .history-day.lv-2[data-v-514856af] {
     background: rgba(var(--color-blue), .3);
+}
+
+/* fix reply overflow */
+.reply[data-v-0bf5aadf] {
+    overflow: visible;
 }
 
 /* avatar background animation */
