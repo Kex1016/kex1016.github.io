@@ -1,15 +1,15 @@
-# Discord themes
+# The repository for my Github Pages
+[Go to site](https://kex1016.github.io)
 
-- [Spotify to Discord mod](https://kex1016.github.io/discord-themes/spotify-discord.theme.css) (Original by CapnKitten)
+## Discord themes
 
-# Discord projects
+- [Spotify to Discord theme](https://kex1016.github.io/discord-themes/spotify-discord.theme.css) (Original by CapnKitten)
 
-- [Bot - great bot](https://github.com/Kex1016/great-bot) (Discontinued)
-- [Bot - FALD](https://github.com/Kex1016/FALD) (Discontinued)
-- I have a bunch of other bots, but I didn't upload them to Github as of yet. Maybe I will later on.
+## Discord projects
 
-# Web stuff
+- I have a bunch of bots, but I didn't upload them to Github, because I'm not confident at all.
 
-- [Light novel folder](https://kex-lncorner.netlify.app)
-- [Blog](https://kex-blog.netlify.app) (Sorta discontinued, may write more to it.)
-- My site (soon enough)
+## Web stuff
+
+- [Weeb Squad](https://weebsquad.moe)
+- [My site](https://kex1016.ga) (Not working on it anymore)
