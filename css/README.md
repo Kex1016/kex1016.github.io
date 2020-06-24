@@ -8,6 +8,10 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `botan.css`
 
 ## Changelog for current theme:
+### v1.1.2
+- Fixed:
+  - Favorites on the overview page are not supposed to have a border
+
 ### v1.1.0
 - Added:
   - Subtle animations to pretty much every card looking element
