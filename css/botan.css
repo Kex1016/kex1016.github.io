@@ -237,15 +237,15 @@
 }
 
 /* navbar */
-.site-theme-dark .nav-unscoped.transparent {
+.nav-unscoped.transparent {
     background: rgba(var(--color-foreground), .5);
 }
 
-.site-theme-dark .nav-unscoped.transparent:hover {
+.nav-unscoped.transparent:hover {
     background: rgba(var(--color-foreground), .8);
 }
 
-.site-theme-dark .nav-unscoped {
+.nav-unscoped {
     background: rgba(var(--color-foreground), 1);
 }
 
