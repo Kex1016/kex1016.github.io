@@ -880,7 +880,11 @@ h2[data-v-82d0a8cc],
     background: rgba(var(--color-foreground-grey));
 }
 
-/* avatar background animation */
+.percentage-bar[data-v-aedb6876] {
+    display: none;
+}
+
+/* avatar background animation (scrapped) */
 @keyframes avatarbg {
     0% {
         background-position: 0 0;
