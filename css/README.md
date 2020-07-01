@@ -8,6 +8,11 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `botan.css`
 
 ## Changelog for current theme:
+### v1.1.5
+- Fixed:
+  - New activity wrapper selectors
+  - `z-index` on the media lists.
+
 ### v1.1.3
 - Removed:
   - Percentage bar below top genres
