@@ -837,6 +837,10 @@ h2[data-v-82d0a8cc],
 }
 
 .medialist.table .entry:hover .cover .image {
+    z-index: 210;
+}
+
+.medialist.table .entry:hover .cover .image {
     border-radius: 3px;
     box-shadow: 0 2px 20px rgba(49, 54, 68, .3);
     display: block;
