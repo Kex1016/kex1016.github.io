@@ -39,3 +39,7 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 
 ### v1.0.0
 - Initial version.
+
+-------
+
+**Last updated:** 07/01/2020 - 2:56 AM
