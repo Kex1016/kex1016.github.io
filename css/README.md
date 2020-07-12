@@ -9,6 +9,10 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `nekopara.css`
 
 ## Changelog:
+### v1.2.0
+`nekopara.css`
+- Initial release.
+
 ### v1.1.4
 `botan.css`
 - Fixed:
@@ -49,4 +53,4 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 
 -------
 
-**Last updated:** 07/01/2020 - 2:56 AM
+**Last updated:** 07/12/2020 - 2:32 AM
