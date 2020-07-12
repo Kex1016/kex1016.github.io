@@ -25,7 +25,7 @@
     --color-background-200: 39, 39, 39;
 
     --color-text: 255, 255, 255;
-    --color-text-light: 255, 242, 174;
+    --color-text-light: 233, 105, 72;
 
     --headquarters-top: 80px;
     --headquarters-left: 20px;
@@ -47,7 +47,7 @@
 .user-page-unscoped.orange,
 .site-theme-dark .user-page-unscoped.orange,
 .site-theme-contrast .user-page-unscoped.orange {
-    --color-blue: 255, 255, 255;
+    --color-blue: 238, 176, 4;
     --color-fav-red: 206, 28, 28;
     --color-fav-blue: 71, 177, 203;
 }
@@ -87,7 +87,7 @@
 }
 
 /* bottom image */
-a[href="https://weebsquad.moe/"] {
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"] {
     position: fixed;
     top: 88%;
     bottom: 0;
@@ -105,7 +105,7 @@ a[href="https://weebsquad.moe/"] {
     z-index: 10;
 }
 
-a[href="https://weebsquad.moe/"] b {
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"] b {
     margin-left: 0;
     transition: 0.5s;
     width: 150px;
@@ -114,13 +114,13 @@ a[href="https://weebsquad.moe/"] b {
     z-index: 20;
 }
 
-a[href="https://weebsquad.moe/"]:hover b {
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"]:hover b {
     margin-left: 100px;
 
     background: rgb(var(--color-foreground));
 }
 
-a[href="https://weebsquad.moe/"] b::after {
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"] b::after {
     transition: 0.5s;
     position: relative;
     content: 'Click to go to the Weeb Squad HQ!';
@@ -128,7 +128,7 @@ a[href="https://weebsquad.moe/"] b::after {
     margin-left: 0;
 }
 
-a[href="https://weebsquad.moe/"]:hover b::after {
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"]:hover b::after {
     content: 'Click to go to the Weeb Squad HQ!';
     opacity: 1;
 }
@@ -136,4 +136,40 @@ a[href="https://weebsquad.moe/"]:hover b::after {
 /* footer recolor */
 .footer[data-v-82d0a8cc] {
     background: rgba(var(--color-foreground));
+}
+
+/* stats stuff */
+.stats-wrap[data-v-2cf72664] {
+    grid-template-columns: 1fr;
+}
+
+.overview[data-v-2cf72664] .content-wrap[data-v-815ccddc]:first-of-type {
+    border-radius: 4px 4px 0 0;
+}
+
+.overview[data-v-2cf72664] .content-wrap[data-v-815ccddc]:last-of-type {
+    border-radius: 0 0 4px 4px;
+}
+
+/* navbar */
+/* navbar */
+.site-theme-dark .nav-unscoped.transparent,
+.nav-unscoped.transparent,
+.site-theme-dark .nav-unscoped,
+.nav[data-v-4fbac4e1]:not(.transparent) {
+    border-bottom: 2px rgb(var(--color-blue)) solid;
+}
+
+.site-theme-dark .nav-unscoped.transparent,
+.nav-unscoped.transparent {
+    background: rgba(var(--color-text-light), 0.5);
+    color: white;
+}
+
+.site-theme-dark .nav-unscoped.transparent:hover,
+.nav-unscoped.transparent:hover,
+.site-theme-dark .nav-unscoped,
+.nav[data-v-4fbac4e1]:not(.transparent) {
+    background: rgba(var(--color-text-light), 0.8);
+    color: white;
 }
