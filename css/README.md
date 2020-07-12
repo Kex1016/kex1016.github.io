@@ -6,23 +6,27 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 - [`botan.css`](https://kex1016.github.io/css/botan.css): I use this theme for my fifth, Botan theme. [[Screenshot]](https://files.weebsquad.moe/4dzCM4no.png)
 - `Another theme is currently WIP.`
 
-## Currently using: `botan.css`
+## Currently using: `nekopara.css`
 
-## Changelog for current theme:
+## Changelog:
 ### v1.1.4
+`botan.css`
 - Fixed:
   - New activity wrapper selectors
   - `z-index` on the media lists.
 
 ### v1.1.3
+`botan.css`
 - Removed:
   - Percentage bar below top genres
 
 ### v1.1.2
+`botan.css`
 - Fixed:
   - Favorites on the overview page are not supposed to have a border
 
 ### v1.1.0
+`botan.css`
 - Added:
   - Subtle animations to pretty much every card looking element
   - Favorites, stats, social, submission pages and popout windows are now properly themed
@@ -33,12 +37,14 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
   - List entries' covers in my anime/manga list not displaying when hovered over
 
 ### v1.0.5
+`botan.css`
 - Added:
   - Themed hohMilestones
 - Fixed:
   - Fixed overflow on replies
 
 ### v1.0.0
+`botan.css`
 - Initial version.
 
 -------
