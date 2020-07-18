@@ -3,12 +3,17 @@
 I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) profile here. Please credit me when you use my stuff. Thank you.
 - [`aokana.css`](https://kex1016.github.io/css/aokana.css): A theme I made for [Aokana](https://anilist.co/user/Aokana/)
 - [`fubuki.css`](https://kex1016.github.io/css/fubuki.css): I used this theme for my fourth, Fubuki theme. [[Screenshot]](https://files.weebsquad.moe/HQ4OZwEo.png)
-- [`botan.css`](https://kex1016.github.io/css/botan.css): I use this theme for my fifth, Botan theme. [[Screenshot]](https://files.weebsquad.moe/4dzCM4no.png)
-- `Another theme is currently WIP.`
+- [`botan.css`](https://kex1016.github.io/css/botan.css): I used this theme for my fifth, Botan theme. [[Screenshot]](https://files.weebsquad.moe/4dzCM4no.png)
+- [`nekopara.css`](https://kex1016.github.io/css/nekopara.css): I used this theme for my sixth profile theme, which was also a collab. [Screenshot soon]
+- [`release the spyce.css`](https://kex1016.github.io/css/release the spyce.css/): I use this theme for my seventh profile theme based around RELEASE THE SPYCE [Screenshot soon]
 
-## Currently using: `nekopara.css`
+## Currently using: `release the spyce.css`
 
 ## Changelog:
+### 1.3.0
+`release the spyce.css`
+- Initial release, probably full of errors.
+
 ### v1.2.0
 `nekopara.css`
 - Initial release.
