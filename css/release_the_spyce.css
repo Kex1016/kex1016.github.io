@@ -1,0 +1,986 @@
+/* fonts */
+@font-face {
+    font-family: 'Sequel Sans Semi Bold Obl Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldOblHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldOblHead.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Heavy Obl Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyOblHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyOblHead.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Black Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackHead.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Medium Obl Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumOblBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumOblBody.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Heavy Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyHead.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Bold Obl Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldOblHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldOblHead.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Black Obl Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackOblBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackOblBody.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Book Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookBody.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Medium Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumHead.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Heavy Obl Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyOblBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyOblBody.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Bold Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldBody.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Bold Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldHead.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Light Obl Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightOblHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightOblHead.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Book Obl Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookOblBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookOblBody.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Book Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookHead.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Light Obl Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightOblBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightOblBody.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Book Obl Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookOblHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BookOblHead.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Oblique Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-ObliqueBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-ObliqueBody.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Medium Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumBody.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Oblique Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-ObliqueHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-ObliqueHead.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Black Obl Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackOblHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackOblHead.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Light Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightBody.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Medium Obl Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumOblHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-MediumOblHead.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Light Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-LightHead.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Semi Bold Head';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldHead.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldHead.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Bold Obl Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldOblBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BoldOblBody.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Semi Bold Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldBody.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Heavy Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-HeavyBody.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Semi Bold Obl Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldOblBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-SemiBoldOblBody.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sequel Sans Black Body';
+    src: url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackBody.woff2') format('woff2'),
+    url('https://kex1016.github.io/fonts/sequelsans/SequelSans-BlackBody.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apparatus-SIL';
+    src:url('https://kex1016.github.io/fonts/apparatus/Apparatus-SIL.ttf.woff') format('woff'),
+    url('https://kex1016.github.io/fonts/apparatus/Apparatus-SIL.ttf.svg#Apparatus-SIL') format('svg'),
+    url('https://kex1016.github.io/fonts/apparatus/Apparatus-SIL.ttf.eot'),
+    url('https://kex1016.github.io/fonts/apparatus/Apparatus-SIL.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* variables */
+:root,
+.site-theme-dark,
+.site-theme-contrast {
+    --color-background: 35, 31, 30;
+    --color-foreground: 152, 114, 161;
+    --color-foreground-darker: 121, 91, 128;
+    --color-shadow: 38, 34, 34;
+    --color-overlay: 0,0,0;
+    --color-foreground-grey: 31, 31, 31;
+    --color-background-400: 81,97,112;
+    --color-background-300: 18, 18, 18;
+    --color-background-100: 26, 26, 26;
+    --color-background-200: 39, 39, 39;
+
+    --color-text: 255, 255, 255;
+    --color-text-light: 223, 194, 255;
+    --color-text-lighter: 223, 194, 255;
+
+    --headquarters-top: 80px;
+    --headquarters-left: 20px;
+
+    --color-subtitle: 46, 46, 54;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(var(--color-foreground-darker));
+    outline: 1px solid rgb(136, 93, 0);
+    border-radius: 10px;
+}
+
+/* replace color-blue */
+:root,
+.user-page-unscoped.orange,
+.site-theme-dark .user-page-unscoped.orange,
+.site-theme-contrast .user-page-unscoped.orange {
+    --color-blue: 201, 174, 229;
+    --color-blue-dim: 179, 155, 204;
+}
+
+/* FONTS */
+/* - Light body */
+.stat .value[data-v-815ccddc],
+.milestones .milestone[data-v-815ccddc],
+.dropdown[data-v-38edf8f8],
+.dropdown[data-v-0bb70ffa],
+.name[data-v-aedb6876],
+.el-dropdown-menu--small .el-dropdown-menu__item,
+.wrap[data-v-5e514b1e],
+.overview[data-v-2cf72664] .content-wrap,
+.wrap[data-v-5e514b1e],
+.browse-wrap[data-v-4fbac4e1] .dropdown,
+.user-wrap[data-v-4fbac4e1] .dropdown,
+.site-theme-dark .quick-search.el-select .el-input.el-input__inner,
+.site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner,
+.site-theme-dark .el-select-dropdown,
+.site-theme-dark .el-dropdown-menu,
+.site-theme-dark .el-dropdown-menu__item--divided::before,
+.input-shadow .el-input__inner,
+.reply[data-v-0bf5aadf],
+.el-input,
+.el-textarea,
+.markdown-editor,
+.name[data-v-aedb6876],
+.medialist.table .list-section,
+.filters-wrap[data-v-128c06f0],
+.el-input__inner,
+.filter-wrap[data-v-1e00b9da],
+.footer[data-v-82d0a8cc],
+.section-header[data-v-514856af],
+.section-header[data-v-aedb6876],
+.section-header[data-v-45543a61],
+.medialist.table .section-name,
+.name[data-v-5445dac8],
+.section-header[data-v-93c5960c],
+.section-header[data-v-09492909],
+.heading h3[data-v-72dc5b51],
+.title[data-v-e74f4a6a],
+h2[data-v-82d0a8cc],
+.highlight .label[data-v-72dc5b51],
+.bar-chart-wrap[data-v-46edc0ca],
+.options[data-v-05bb5e72],
+.title[data-v-26dc9635],
+[data-v-72dc5b51] .horizontal-scroller,
+.label-wrap[data-v-26dc9635],
+.filters[data-v-310d8b7e],
+.title[data-v-59e94718],
+.filters[data-v-3ed82f3f],
+.details[data-v-0f6464f0],
+#regularAnimeTable,
+#regularMangaTable,
+#animeStaff,
+#animeStudios,
+#mangaStaff,
+.tooltip.animate-position[data-v-9401173e],
+.el-message-box {
+    font-family: 'Sequel Sans Light Body', sans-serif;
+}
+/* - heavy head */
+.about[data-v-2cf72664]::before,
+.desktop[data-v-514856af]::before,
+.desktop[data-v-aedb6876]::before,
+.section[data-v-2cf72664] .favourites[data-v-45543a61]::before,
+.activity-entry::before,
+.section:last-of-type::before,
+.medialist.table .section-name,
+.name[data-v-5445dac8],
+.links[data-v-4fbac4e1] {
+    font-weight: 700;
+    font-family: 'Sequel Sans Heavy Head', sans-serif;
+}
+
+/* Remove ugliness */
+.percentage-bar[data-v-aedb6876],
+.footer[data-v-815ccddc],
+.user .chevron[data-v-4fbac4e1],
+.overview[data-v-2cf72664] .section-header,
+.hohDownload,
+.has-label:hover.has-label[data-v-5e514b1e]:before,
+.nav .link[data-v-5445dac8]:nth-of-type(4),
+.nav .link[data-v-5445dac8]:nth-of-type(7),
+.el-message-box__title,
+.dropdown[data-v-0bb70ffa]:before,
+.dropdown[data-v-38edf8f8]:before,
+.theme-selector,
+.hohColourPicker {
+    display: none;
+}
+
+/* remove de foken borders */
+.content-wrap,
+.el-textarea__inner,
+.el-input, .el-textarea,
+.markdown-editor,
+.wrap[data-v-5e514b1e],
+.dropdown[data-v-5445dac8],
+.overview .favourites > .favourites-wrap,
+.follower-badge[data-v-5445dac8],
+.nav-btn[data-v-5445dac8],
+.history-day[data-v-514856af],
+.medialist.table .list-section,
+.theme-switch,
+.button[data-v-93c5960c],
+.el-input__inner,
+.el-message-box,
+.el-message-box .el-button,
+.dropdown[data-v-0bb70ffa],
+.footer[data-v-0bb70ffa],
+.dropdown[data-v-38edf8f8],
+.footer[data-v-38edf8f8],
+.load-more[data-v-6f203cf2],
+.reply[data-v-5a191921],
+.favourite[data-v-4dea9e03] {
+    border-radius: 0 !important;
+}
+
+/* Add headers */
+.about[data-v-2cf72664]::before,
+.desktop[data-v-514856af]::before,
+.desktop[data-v-aedb6876]::before,
+.section[data-v-2cf72664] .favourites[data-v-45543a61]::before,
+.activity-entry::before,
+.section:last-of-type::before {
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(var(--color-subtitle));
+    background: rgb(var(--color-foreground-darker));
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+    padding: 5px 50% 5px 10px;
+    position: relative;
+    transition: background .2s;
+    max-width: 50%;
+}
+
+.el-message-box__wrapper::before {
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(var(--color-subtitle));
+    background: rgb(var(--color-foreground-darker));
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+    padding: 5px 5% 5px 10px;
+    position: relative;
+    transition: background .2s;
+}
+
+.medialist.table .section-name {
+    width: 50%;
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(var(--color-subtitle));
+    background: rgb(var(--color-foreground-darker));
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+    padding: 5px 10% 5px 10px;
+    position: relative;
+    transition: background .2s;
+    margin: 0;
+}
+
+/* Positioning */
+/* - 3.5px */
+.desktop[data-v-aedb6876]::before,
+.desktop[data-v-514856af]::before,
+.about[data-v-2cf72664]::before,
+.activity-entry::before,
+.section:last-of-type::before {
+    bottom: 3.5px;
+}
+/* - 2.5px */
+.section[data-v-2cf72664] .favourites[data-v-45543a61]::before {
+    bottom: 2.5px;
+}
+
+.about[data-v-2cf72664]::before {
+    content: 'Agent Profile';
+}
+
+.desktop[data-v-514856af]::before {
+    content: 'Activity History';
+}
+
+.desktop[data-v-aedb6876]::before {
+    content: 'Most viewed genres';
+}
+
+.section .favourites:nth-child(4)::before {
+    content: 'Favorite Anime';
+}
+.section .favourites:nth-child(5)::before {
+    content: 'Favorite Manga';
+}
+.section .favourites:nth-child(6)::before {
+    content: 'Favorite Characters';
+}
+.section .favourites:nth-child(7)::before {
+    content: 'Favorite Staff';
+}
+.section .favourites:nth-child(8)::before {
+    content: 'Favorite Studios';
+}
+
+.activity-entry.activity-text::before {
+    content: 'Text Activity';
+}
+.activity-entry.activity-message::before {
+    content: 'Message Transmission';
+}
+.activity-entry.activity-manga_list::before {
+    content: 'Manga Entry';
+}
+
+.section:last-of-type::before {
+    content: "Agent's stats";
+}
+
+.el-message-box__wrapper[aria-label="Add YouTube Video"]::before {
+    content: 'Embed a YouTube video';
+}
+.el-message-box__wrapper[aria-label="Add URL"]::before {
+    content: 'Embed a link';
+}
+.el-message-box__wrapper[aria-label="Add image"]::before {
+    content: 'Embed an image';
+}
+.el-message-box__wrapper[aria-label="Add WebM Video"]::before {
+    content: 'Embed a video';
+}
+
+/* increase margin for activities */
+.activity-entry {
+    margin-bottom: 40px;
+}
+
+/* replace images in my bio */
+.about .content-wrap .markdown[data-v-2cf72664] img[src="https://files.weebsquad.moe/RNbtpIPT.png"] {
+    content: url("https://files.weebsquad.moe/iyFSGqXa.png");
+}
+
+/* banner content */
+.banner .container[data-v-5445dac8] {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+/* avatar positioning */
+.avatar[data-v-5445dac8] {
+    position: relative;
+    bottom: 30px;
+}
+
+/* username positioning */
+.name[data-v-5445dac8] {
+    position: absolute;
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(var(--color-subtitle));
+    background: rgb(var(--color-foreground));
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+    padding: 5px 80px 5px 40px;
+    z-index: 1000;
+}
+
+/* favorites background */
+.overview .favourites > .favourites-wrap {
+    padding: 20px 15px !important;
+    background: rgb(var(--color-foreground)) !important;
+    max-width: 460px;
+}
+
+/* follower badge */
+.follower-badge[data-v-5445dac8] {
+    background: rgb(var(--color-foreground-darker));
+    position: relative;
+    padding-left: 35px;
+    top: 20px;
+    z-index: 5;
+}
+/* - hover */
+.follower-badge[data-v-5445dac8]:hover {
+    background: rgba(var(--color-blue),1);
+    color: rgb(255, 255, 255);
+}
+
+/* banner actions */
+.actions[data-v-5445dac8] {
+    padding: 5px 20px 10px 50px;
+    background: rgb(var(--color-foreground));
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+.nav-btn[data-v-5445dac8] {
+    width: 130px;
+    position: relative;
+    top: 10px;
+    background: rgb(var(--color-foreground-darker));
+    transition: .2s;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.nav-btn[data-v-5445dac8]:hover {
+    background: rgb(var(--color-foreground));
+    border-color: rgb(var(--color-foreground-darker));
+}
+.dropdown[data-v-5445dac8] {
+    position: relative;
+    top: 10px
+}
+
+/* history day overhaul */
+/* - lv. 0 */
+.history-day[data-v-514856af] {
+    background: transparent;
+    border: 1px solid rgb(var(--color-foreground-darker));
+}
+
+/* navbar stuff */
+/* - increase z-index */
+#nav {
+    z-index: 50000;
+    width: 95%;
+    margin-top: 20px;
+    left: calc(100% - 97.5%);
+    overflow: visible;
+}
+/* - transparent */
+.site-theme-dark .nav-unscoped.transparent,
+.nav-unscoped.transparent {
+    background: rgba(var(--color-foreground-darker), 0.5);
+    color: white;
+}
+/* - hover / not transparent */
+.site-theme-dark .nav-unscoped.transparent:hover,
+.nav-unscoped.transparent:hover,
+.site-theme-dark .nav-unscoped,
+.nav[data-v-4fbac4e1]:not(.transparent) {
+    background: rgba(var(--color-foreground-darker), 0.8);
+    color: white;
+}
+
+/* media lists */
+/* - filters */
+.medialist .filters .filter-group:first-child > span {
+    padding: 10px 15px;
+    border-radius: 0;
+    transition: .2s;
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+    text-align: center;
+}
+/* - filter counts */
+.medialist .filters .filter-group:first-child > span .count {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    top: 22px;
+}
+
+/* navbar links */
+.links[data-v-4fbac4e1] {
+    font-style: italic;
+}
+
+/* custom logo */
+.logo img[data-v-4fbac4e1] {
+    content: url("https://files.weebsquad.moe/Ypcw1o4z.png");
+}
+
+/* stats wrap */
+.stats-wrap[data-v-2cf72664] {
+    grid-column-gap: 0;
+}
+
+/* buttons */
+.button:not([data-v-b23584ce]),
+.el-message-box .el-button {
+    width: 120px;
+    justify-content: center;
+    background: rgb(var(--color-foreground-darker));
+    transition: .2s;
+    border: 2px solid transparent;
+    border-right-width: 0;
+    border-left-width: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.load-more[data-v-6f203cf2] {
+    justify-content: center;
+    background: rgb(var(--color-foreground-darker));
+    transition: .2s;
+    border: 2px solid transparent;
+    border-right-width: 0;
+    border-left-width: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.button[data-v-93c5960c]:hover,
+.el-message-box .el-button:hover,
+.load-more[data-v-6f203cf2]:hover {
+    background: transparent;
+    border-color: rgb(var(--color-foreground-darker));
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+/* msg box close */
+.el-message-box__headerbtn .el-message-box__close {
+    color: rgb(var(--color-foreground-darker));
+}
+
+/* Message box fix */
+.el-message-box__wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+/* message box message overrides */
+.el-message-box__wrapper[aria-label="Add YouTube Video"] .el-message-box__message,
+.el-message-box__wrapper[aria-label="Add URL"] .el-message-box__message,
+.el-message-box__wrapper[aria-label="Add image"] .el-message-box__message,
+.el-message-box__wrapper[aria-label="Add WebM Video"] .el-message-box__message {
+    visibility: hidden;
+    position: relative;
+}
+.el-message-box__wrapper[aria-label="Add YouTube Video"] .el-message-box__message::after,
+.el-message-box__wrapper[aria-label="Add URL"] .el-message-box__message::after,
+.el-message-box__wrapper[aria-label="Add image"] .el-message-box__message::after,
+.el-message-box__wrapper[aria-label="Add WebM Video"] .el-message-box__message::after {
+    visibility: visible;
+    position: absolute;
+    bottom: 5px
+}
+.el-message-box__wrapper[aria-label="Add URL"] .el-message-box__message::after {
+    content: 'Type the link you want to embed:';
+}
+.el-message-box__wrapper[aria-label="Add YouTube Video"] .el-message-box__message::after {
+    content: 'Type a valid YouTube link to embed:';
+}
+.el-message-box__wrapper[aria-label="Add image"] .el-message-box__message::after {
+    content: 'Type a valid image link to embed:';
+}
+.el-message-box__wrapper[aria-label="Add WebM Video"] .el-message-box__message::after {
+    content: 'Type a valid video link to ember (mp4, webm, mkv, etc.):';
+}
+
+/* button fixes */
+.button.liked {
+    background: transparent;
+}
+
+/* primary links */
+.primary-link[data-v-0bb70ffa],
+.primary-link[data-v-38edf8f8],
+.primary-link .icon[data-v-0bb70ffa],
+.primary-link .icon[data-v-38edf8f8] {
+    color: rgb(var(--color-text-light));
+}
+.primary-links[data-v-0bb70ffa],
+.primary-links[data-v-38edf8f8]{
+    background-color: rgb(var(--color-foreground-darker));
+}
+/* secondary-links */
+.secondary-link[data-v-0bb70ffa],
+.footer a[data-v-38edf8f8],
+.secondary-links a[data-v-38edf8f8] {
+    color: rgb(var(--color-text));
+}
+/* dropdown footer */
+.footer[data-v-0bb70ffa],
+.footer[data-v-38edf8f8] {
+    background-color: rgb(var(--color-foreground));
+}
+
+/* footer */
+.wrap[data-v-82d0a8cc] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer[data-v-82d0a8cc] {
+    background: rgb(var(--color-foreground-darker));
+    color: rgb(var(--color-text));
+    z-index: 50000;
+    width: 98%;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+/* activity headers */
+.wrap[data-v-5e514b1e] {
+    position: relative;
+}
+.text[data-v-5e514b1e] {
+    padding: 50px 20px 20px 20px;
+}
+.text .header[data-v-5e514b1e] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(var(--color-foreground-darker), 0.5);
+    box-shadow: inset 0 0 0 0 rgba(var(--color-foreground-darker), 1);
+    padding-right: 20px;
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    transition: .5s ease-in;
+}
+.text .header[data-v-5e514b1e]:hover {
+    box-shadow: inset 400px 0 0 0 rgba(var(--color-foreground-darker), 1);
+}
+.reply[data-v-5a191921] {
+    position: relative;
+    padding-top: 40px;
+}
+.avatar[data-v-5a191921] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+}
+.name[data-v-5a191921] {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    padding: 8px 30px 32px 45px;
+    background: rgba(var(--color-foreground-darker), 0.5);
+    box-shadow: inset 0 0 0 0 rgba(var(--color-foreground-darker), 1);
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    z-index: 1;
+    transition: .5s ease-in;
+}
+.name[data-v-5a191921]:hover {
+    box-shadow: inset 400px 0 0 0 rgba(var(--color-foreground-darker), 1);
+}
+
+/* actually decent overflow on activities */
+.text[data-v-5e514b1e] .markdown {
+    overflow-y: auto;
+}
+
+/* studio bullshit */
+.site-theme-dark .overview .favourite.studio {
+    background-color: rgb(var(--color-foreground-darker)) !important;
+}
+
+/* medialist entry rows hover */
+.medialist.table .entry .cover .image {
+    left: 0;
+    transition: left .35s ease-in-out 0s;
+}
+
+.medialist.table .list-wrap {
+    position: relative;
+}
+
+.medialist.table .list-section {
+    z-index: 10;
+}
+
+.medialist.table .entry {
+    position: static;
+}
+
+.medialist.table .entry .cover .image {
+    z-index: 200;
+}
+
+.medialist.table .entry:hover .cover .image {
+    z-index: 210;
+}
+
+.medialist.table .entry:hover .cover .image {
+    border-radius: 3px;
+    box-shadow: 0 2px 20px rgba(49, 54, 68, .3);
+    display: block;
+    height: 200px;
+    left: auto;
+    padding: 0;
+    position: absolute;
+    top: auto;
+    width: 140px;
+}
+
+.medialist.table .entry .title {
+    transition: all .35s ease-in-out 0s;
+}
+
+.medialist.table .entry:hover .title {
+    padding-left: 15px;
+}
+
+.medialist.table .entry .cover {
+    transition: .35s ease-in-out;
+}
+
+.medialist.table .entry:hover .cover {
+    min-width: 1px;
+    max-width: 1px;
+}
+
+/* bottom image */
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"] {
+    position: fixed;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"] b {
+    margin-left: 0;
+    transition: 0.2s;
+    width: 200px;
+    padding: 15px 0;
+    z-index: 20;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    background: rgb(var(--color-foreground-darker));
+    border: 2px solid transparent;
+    border-right: none;
+    border-left: none;
+    text-align:center;
+}
+
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"]:hover b {
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+    background: transparent;
+    border-color: rgb(var(--color-foreground-darker));
+}
+
+.content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"] b::after {
+    transition: 0.5s;
+    position: relative;
+    content: 'Weeb Squad';
+    opacity: 1;
+    margin-left: 0;
+}
+
+/* remove the custom CSS notice */
+.about h5 {
+    display: none;
+}
