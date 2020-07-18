@@ -5,7 +5,7 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 - [`fubuki.css`](https://kex1016.github.io/css/fubuki.css): I used this theme for my fourth, Fubuki theme. [[Screenshot]](https://files.weebsquad.moe/HQ4OZwEo.png)
 - [`botan.css`](https://kex1016.github.io/css/botan.css): I used this theme for my fifth, Botan theme. [[Screenshot]](https://files.weebsquad.moe/4dzCM4no.png)
 - [`nekopara.css`](https://kex1016.github.io/css/nekopara.css): I used this theme for my sixth profile theme, which was also a collab. [Screenshot soon]
-- [`release the spyce.css`](https://kex1016.github.io/css/release the spyce.css/): I use this theme for my seventh profile theme based around RELEASE THE SPYCE [Screenshot soon]
+- [`release the spyce.css`](https://kex1016.github.io/css/release%20the%20spyce.css/): I use this theme for my seventh profile theme based around RELEASE THE SPYCE [Screenshot soon]
 
 ## Currently using: `release the spyce.css`
 
