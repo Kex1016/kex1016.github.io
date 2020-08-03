@@ -1,6 +1,6 @@
 /* Don't actually use this. */
 
-a[href="/user/KexMisc/"]::after {
+a[href="/user/NishiTsuki/"]::after {
     content: "ur banned";
     font-size: 50px;
 
@@ -21,7 +21,7 @@ a[href="/user/KexMisc/"]::after {
     pointer-events: visibleFill;
 }
 
-a[href="/user/KexMisc/"]::before {
+a[href="/user/NishiTsuki/"]::before {
     content: "ur banned";
     font-size: 50px;
 
