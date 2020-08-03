@@ -1,0 +1,118 @@
+/* Don't actually use this. */
+
+a[href="/user/KexMisc/"]::after {
+    content: "ur banned";
+    font-size: 50px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(var(--color-background));
+    z-index: 6666;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: uwu .1s linear infinite, frickdetext 1s linear infinite;
+
+    pointer-events: visibleFill;
+}
+
+a[href="/user/KexMisc/"]::before {
+    content: "ur banned";
+    font-size: 50px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(var(--color-background));
+    z-index: 666;
+
+    animation: help1 .1s linear infinite, help2 .2s linear infinite, help3 .3s linear infinite, help4 .4s linear infinite, help5 .5s linear infinite, uwu .1s linear infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: visibleFill;
+}
+
+@keyframes help1 {
+    from {
+        filter: blur(0px) brightness(0) contrast(0) grayscale(0%) drop-shadow(0 0 0 red) invert(0%) hue-rotate(0);
+        backdrop-filter: blur(0px);
+    }
+
+    to {
+        filter: blur(1000px) drop-shadow(100px 50px 600px red) invert(75%) hue-rotate(10000deg);
+        backdrop-filter: blur(10000px);
+    }
+}
+
+@keyframes help2 {
+    from {
+        filter: blur(0px) brightness(0) contrast(0) grayscale(0%) drop-shadow(0 0 0 blue) invert(0%) hue-rotate(0);
+        backdrop-filter: blur(0px);
+    }
+
+    to {
+        filter: blur(1000px) drop-shadow(100px 50px 600px green) invert(75%) hue-rotate(10000deg);
+        backdrop-filter: blur(10000px);
+    }
+}
+
+@keyframes help3 {
+    from {
+        filter: blur(0px) brightness(0) contrast(0) grayscale(0%) drop-shadow(0 0 0 goldenrod) invert(0%) hue-rotate(0);
+        backdrop-filter: blur(0px);
+    }
+
+    to {
+        filter: blur(1000px) drop-shadow(100px 50px 600px white) invert(75%) hue-rotate(10000deg);
+        backdrop-filter: blur(10000px);
+    }
+}
+
+@keyframes help4 {
+    from {
+        filter: blur(0px) brightness(0) contrast(0) grayscale(0%) drop-shadow(0 0 0 gray) invert(0%) hue-rotate(0);
+        backdrop-filter: blur(0px);
+    }
+
+    to {
+        filter: blur(1000px) drop-shadow(100px 50px 600px crimson) invert(75%) hue-rotate(10000deg);
+        backdrop-filter: blur(10000px);
+    }
+}
+
+@keyframes help5 {
+    from {
+        filter: blur(0px) brightness(0) contrast(0) grayscale(0%) drop-shadow(0 0 0 pink) invert(0%) hue-rotate(0);
+        backdrop-filter: blur(0px);
+    }
+
+    to {
+        filter: blur(1000px) drop-shadow(100px 50px 600px lightgreen) invert(75%) hue-rotate(10000deg);
+        backdrop-filter: blur(10000px);
+    }
+}
+
+@keyframes uwu{
+    0%{ background-image: url(https://i.imgur.com/tfkdDr8.png)}
+    50%{ background-image: url(https://i.imgur.com/vFueYJG.jpg)}
+    100%{ background-image: url(https://i.imgur.com/tfkdDr8.png)}
+}
+
+@keyframes frickdetext {
+    from {
+        transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0) scale3d(0, 0, 0);
+    }
+    to {
+        transform: rotate3d(100, 200, 300, 6320deg) translate3d(1200px, 5000%, 300em) scale3d(2523, 56437, 755);
+    }
+}
