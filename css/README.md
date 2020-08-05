@@ -6,10 +6,15 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 - [`botan.css`](https://kex1016.github.io/css/botan.css): I used this theme for my fifth, Botan theme. [[Screenshot]](https://files.weebsquad.moe/4dzCM4no.png)
 - [`nekopara.css`](https://kex1016.github.io/css/nekopara.css): I used this theme for my sixth profile theme, which was also a collab. [Screenshot soon]
 - [`release the spyce.css`](https://kex1016.github.io/css/release_the_spyce.css/): I use this theme for my seventh profile theme based around RELEASE THE SPYCE [Screenshot soon]
+- [`AL_redesign.css`](https://kex1016.github.io/css/AL_redesign.css/): The main framework for some of my future themes. No screenshots.
 
 ## Currently using: `release the spyce.css`
 
 ## Changelog:
+### 1.4.0
+`AL_redesign.css`
+- Initial release, not using this theme standalone.
+
 ### 1.3.0
 `release the spyce.css`
 - Initial release, probably full of errors.
