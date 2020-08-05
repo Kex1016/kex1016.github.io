@@ -1,5 +1,3 @@
-@import url('https://kex1016.github.io/css/bannster.css');
-
 /* fonts */
 @font-face {
     font-family: 'Sequel Sans Semi Bold Obl Head';
@@ -324,11 +322,11 @@
 
 /* replace color-blue */
 :root,
-.user-page-unscoped.orange,
-.site-theme-dark .user-page-unscoped.orange,
-.site-theme-contrast .user-page-unscoped.orange {
-    --color-blue: 201, 174, 229;
-    --color-blue-dim: 179, 155, 204;
+.user-page-unscoped,
+.site-theme-dark .user-page-unscoped,
+.site-theme-contrast .user-page-unscoped {
+    --color-blue: 201, 174, 229 !important;
+    --color-blue-dim: 179, 155, 204 !important;
 }
 
 /* FONTS */
@@ -416,7 +414,9 @@ h2[data-v-82d0a8cc],
 .dropdown[data-v-0bb70ffa]:before,
 .dropdown[data-v-38edf8f8]:before,
 .theme-selector,
-.hohColourPicker {
+.hohColourPicker,
+.site-theme-dark .el-popper[x-placement^="bottom"] .popper__arrow,
+.site-theme-dark .el-popper[x-placement^="bottom"] .popper__arrow::after {
     display: none;
 }
 
@@ -600,6 +600,11 @@ h2[data-v-82d0a8cc],
     max-width: 460px;
 }
 
+/* favorites no border */
+.favourite[data-v-728ccf84] {
+    border-radius: 0;
+}
+
 /* follower badge */
 .follower-badge[data-v-5445dac8] {
     background: rgb(var(--color-foreground-darker));
@@ -705,7 +710,8 @@ h2[data-v-82d0a8cc],
 
 /* buttons */
 .button:not([data-v-b23584ce]),
-.el-message-box .el-button {
+.el-message-box .el-button,
+.compare-btn[data-v-128c06f0] {
     width: 120px;
     justify-content: center;
     background: rgb(var(--color-foreground-darker));
@@ -713,6 +719,7 @@ h2[data-v-82d0a8cc],
     border: 2px solid transparent;
     border-right-width: 0;
     border-left-width: 0;
+    border-radius: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .load-more[data-v-6f203cf2] {
@@ -726,7 +733,8 @@ h2[data-v-82d0a8cc],
 }
 .button[data-v-93c5960c]:hover,
 .el-message-box .el-button:hover,
-.load-more[data-v-6f203cf2]:hover {
+.load-more[data-v-6f203cf2]:hover,
+.compare-btn[data-v-128c06f0]:hover {
     background: transparent;
     border-color: rgb(var(--color-foreground-darker));
     clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
@@ -965,7 +973,7 @@ h2[data-v-82d0a8cc],
     border: 2px solid transparent;
     border-right: none;
     border-left: none;
-    text-align:center;
+    text-align: center;
 }
 
 .content-wrap[data-v-2cf72664] a[href="https://weebsquad.moe/"]:hover b {
@@ -980,9 +988,117 @@ h2[data-v-82d0a8cc],
     content: 'Weeb Squad';
     opacity: 1;
     margin-left: 0;
+    z-index: 30;
 }
 
-/* remove the custom CSS notice */
-.about h5 {
+/* Staff with no image */
+.favourites .staff[style='background-image: url("https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg");'] {
+    background-image: none !important;
+    background-color: rgb(var(--color-foreground-darker));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favourites .staff[style='background-image: url("https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg");']::after {
+    text-align: center;
+    content: 'no image in database';
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+/* Studios */
+.overview .favourites > .favourites-wrap {
+    display: grid !important;
+    grid-gap: 10px;
+    column-gap: 10px !important;
+    grid-template-columns: repeat(auto-fill, 85px);
+    grid-template-rows: repeat(auto-fill, 115px);
+    width: 470px;
+}
+
+.overview .favourite.studio {
+    cursor: pointer;
+    min-height: 115px;
+    font-size: 15px;
+    display: grid;
+    grid-gap: 10px;
+    padding: 2px!important;
+    padding-top: 8px!important;
+    background-color: rgba(var(--color-foreground))!important;
+    text-align: center;
+    align-content: center;
+}
+
+.overview .favourites > .favourites-wrap > div, .overview .favourites > .favourites-wrap > a {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+    column-gap: 10px!important;
+    font-family: monospace;
+    font-weight: 300;
+}
+
+/* tooltips */
+.tooltip[data-v-9401173e] {
+    border-radius: 0;
+}
+
+.tooltip[data-v-9401173e]:after {
     display: none;
+}
+
+/* some footer fixes */
+.links[data-v-82d0a8cc] {
+    margin-left: 0;
+}
+
+/* backdrops! */
+.tooltip.animate-position,
+.medialist .notes:hover:before,
+.el-message-box__wrapper {
+    backdrop-filter: blur(3px);
+}
+
+/* tooltip fixes */
+.title[data-v-9401173e],
+.content[data-v-9401173e] {
+    background: 0;
+}
+
+/* replace some hoh colors */
+.site-theme-dark .quick-search.el-select .el-input.el-input__inner,
+.site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner,
+.site-theme-dark .el-select-dropdown,
+.site-theme-dark .el-dropdown-menu,
+.site-theme-dark .el-dropdown-menu__item--divided::before {
+    background: rgb(var(--color-foreground-darker));
+    border-radius: 0;
+}
+
+/* dropdown hover shit */
+.el-dropdown-menu__item {
+    transition: background-color .2s;
+}
+
+/* compare button */
+.compare-btn[data-v-128c06f0] {
+    width: auto;
+}
+
+/* fancy list entry titles */
+.list .title[data-v-5e514b1e],
+.markdown a:not(.about a) {
+    background-image: linear-gradient(120deg, rgb(var(--color-foreground-darker)) 0%, rgb(var(--color-foreground-darker)) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    color: white;
+    transition: background-size 0.25s cubic-bezier(0.005, 0.550, 1.000, 0.640);
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+
+.list .title[data-v-5e514b1e]:hover,
+.markdown a:not(.about a):hover {
+    background-size: 100% 88%;
 }
