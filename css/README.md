@@ -11,6 +11,21 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `release the spyce.css`
 
 ## Changelog:
+### 2.0.1
+`release the spyce.css`
+- Fixed:
+  - Colors were a bit adjusted
+  - Popper arrows displaying ew
+  - Favorites no longer have border radius
+  - Compare button is a properly themed button now
+  - Smoother hover color transitions on more elements
+- Added:
+  - Favorites section:
+    - Staff with no image have different behaviors now
+    - Some fixes for the studios
+  - Cool backdrop blur effect for the tooltips
+  - Fancy hover event for the list activities
+
 ### 2.0.0
 `AL_redesign.css`
 - Initial release, not using this theme standalone.
