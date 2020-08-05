@@ -27,6 +27,7 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
   - Fancy hover event for the list activities
 
 ### 2.0.0
+**2.0.0 time!!!**
 `AL_redesign.css`
 - Initial release, not using this theme standalone.
 
