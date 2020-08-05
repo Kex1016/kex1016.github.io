@@ -11,7 +11,7 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `release the spyce.css`
 
 ## Changelog:
-### 1.4.0
+### 2.0.0
 `AL_redesign.css`
 - Initial release, not using this theme standalone.
 
