@@ -12,7 +12,7 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `release the spyce.css`
 
 ## Changelog:
-### 2.1.0
+### 2.1.1
 `AL_redesign-bofuri.css`
 - Replaced the links in my bio
 
