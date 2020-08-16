@@ -5,6 +5,17 @@
 	cursor: url('https://files.weebsquad.moe/oE2oBD1X.png') 9 2, auto;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #757575;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
 /* cursor: links */
 a,
 .nav-btn,
@@ -276,11 +287,11 @@ a,
 }
 
 /* backdrop blur */
-.tooltip.animate-position,
+.tooltip.animate-position[data-v-9401173e],
 .medialist .notes:hover:before,
 .el-message-box__wrapper, 
 .el-tooltip__popper {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) !important;
 }
 
 /* title popups have the same bg */
@@ -509,10 +520,10 @@ a,
     from {
 		top: -50px;
     }
-	
-	to {
+
+    to {
 		top: 0;
-	}
+    }
 }
 
 @-webkit-keyframes shine {
