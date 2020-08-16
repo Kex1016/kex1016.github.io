@@ -7,6 +7,7 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 - [`nekopara.css`](https://kex1016.github.io/css/nekopara.css): I used this theme for my sixth profile theme, which was also a collab. [Screenshot soon]
 - [`release the spyce.css`](https://kex1016.github.io/css/release_the_spyce.css/): I use this theme for my seventh profile theme based around RELEASE THE SPYCE [Screenshot soon]
 - [`AL_redesign.css`](https://kex1016.github.io/css/AL_redesign.css/): The main framework for some of my future themes. No screenshots.
+- [`AL_redesign-bofuri.css`](https://kex1016.github.io/css/AL_redesign-bofuri.css/): Bofuri theme for my eigth profile theme. [Screenshot soon]
 
 ## Currently using: `release the spyce.css`
 
@@ -20,6 +21,9 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
   - Cool text for those who aren't living in the database.
   - Cool link to the [Weeb Squad site](https://weebsquad.moe)
   - Shine animation for text
+  
+`AL_redesign.css`
+- Initial release
 
 ### 2.0.1
 `release the spyce.css`
