@@ -73,7 +73,8 @@ a,
 .el-textarea__inner,
 .button,
 .medialist.cards .entry-card,
-.markdown .youtube {
+.markdown .youtube,
+.reply[data-v-5a191921] {
     border-radius: 10px !important;
 }
 
@@ -98,6 +99,7 @@ a,
 .medialist.cards .entry-card,
 .reply[data-v-5a191921],
 .actions .replies[data-v-5e514b1e] {
+	position: relative;
     animation: fadein .8s cubic-bezier(0.075, 0.820, 0.165, 1.000) forwards 1;
 }
 
@@ -139,7 +141,7 @@ a,
 .avatar[data-v-5445dac8] {
     margin-left: 20px;
     /*clip-path: circle(40% at 50% 50%);*/
-    z-index: 20;
+    z-index: 20 !important;
 }
 
 /* follower badge redesign */
@@ -374,16 +376,27 @@ a,
     background-image: none !important;
     background-color: rgb(var(--color-foreground));
     display: flex;
+	flex-direction: column;
+	font-size: 13px;
     align-items: center;
     justify-content: center;
 }
 
-.favourites .staff[style='background-image: url("https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg");']::after {
+.favourites .staff[style='background-image: url("https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg");']::before {
     text-align: center;
-    content: 'no image in database';
+    content: 'not living in the ';
     text-transform: uppercase;
     font-family: monospace;
 }
+
+.favourites .staff[style='background-image: url("https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg");']::after {
+    text-align: center;
+    content: 'database';
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
 
 /* Fancy YT stuff */
 .markdown .youtube {
@@ -426,7 +439,65 @@ a,
     transition: opacity .2s cubic-bezier(0.075, 0.820, 0.165, 1.000), transform .2s cubic-bezier(0.075, 0.820, 0.165, 1.000);
 }
 
+.banner-content h1.name {
+	filter: none;
+}
 
+/* Weeb Squad link */
+.about b[href="weebsquad_outer"] {
+    position: fixed;
+    bottom: 0;
+	left: -300px;
+	margin-bottom: 10px;
+    width: 350px;
+    height: 64px;
+	z-index: 100000;
+    background: rgb(var(--color-foreground));
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, .5));
+	transition: .2s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.about b[href="weebsquad_outer"]:hover {
+	left: 0;
+}
+
+.about b[href="weebsquad_outer"] a[href="https://weebsquad.moe/"] {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+
+.about b[href="weebsquad_outer"] a[href="https://weebsquad.moe/"] b[href="link_main"]::after {
+	content: "Weeb Squad";
+	color: rgb(var(--color-blue)) !important;
+	
+	width: 100%;
+	
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.about b[href="weebsquad_outer"] a[href="https://weebsquad.moe/"] b[href="link_sub"]::after {
+	content: "New and improved site! [WIP]";
+	
+	width: 100%;
+	
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 10px;
+	font-weight: 300;
+}
 
 
 
@@ -436,12 +507,19 @@ a,
 
 @keyframes fadein {
     from {
-        transform: translateY(-50px);
-        opacity: 0;
+		top: -50px;
     }
+	
+	to {
+		top: 0;
+	}
+}
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+@-webkit-keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  100% {
+    background-position: 1000px;
+  }
 }
