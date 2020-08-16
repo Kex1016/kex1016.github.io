@@ -22,7 +22,7 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
   - Cool link to the [Weeb Squad site](https://weebsquad.moe)
   - Shine animation for text
   
-`AL_redesign.css`
+`AL_redesign-bofuri.css`
 - Initial release
 
 ### 2.0.1
