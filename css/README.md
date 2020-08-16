@@ -11,6 +11,16 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `release the spyce.css`
 
 ## Changelog:
+### 2.0.2
+`AL_redesign.css`
+- Fixed:
+  - Some border radius issues
+  - animation (transform) issues
+- Added:
+  - Cool text for those who aren't living in the database.
+  - Cool link to the [Weeb Squad site](https://weebsquad.moe)
+  - Shine animation for text
+
 ### 2.0.1
 `release the spyce.css`
 - Fixed:
