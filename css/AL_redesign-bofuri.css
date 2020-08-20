@@ -89,15 +89,15 @@ https://anilist.co/activity/41107209 - milestones
 }
 
 /* - button text */
-.about b[href="buttons"] a[href="http://weebsquad.moe/about/kex/"]::after {
+.about b[href="buttons"] a[href="https://weebsquad.moe/about/kex/"]::after {
 	content: "About me"
 }
 
-.about b[href="buttons"] a[href="http://weebsquad.moe/about/kex/music"]::after {
+.about b[href="buttons"] a[href="https://weebsquad.moe/about/kex/music"]::after {
 	content: "Music"
 }
 
-.about b[href="buttons"] a[href="http://weebsquad.moe/about/kex/badges"]::after {
+.about b[href="buttons"] a[href="https://weebsquad.moe/about/kex/badges"]::after {
 	content: "Badges"
 }
 
