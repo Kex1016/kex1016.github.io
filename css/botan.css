@@ -386,7 +386,7 @@ h2[data-v-82d0a8cc],
 .site-theme-dark .el-dropdown-menu,
 .site-theme-dark .el-dropdown-menu__item--divided::before,
 .input-shadow .el-input__inner,
-.reply[data-v-0bf5aadf],
+.reply[data-v-5a191921],
 .el-input,
 .el-textarea,
 .markdown-editor,
@@ -492,7 +492,7 @@ h2[data-v-82d0a8cc],
 .site-theme-dark .el-dropdown-menu,
 .site-theme-dark .el-dropdown-menu__item--divided::before,
 .input-shadow .el-input__inner,
-.reply[data-v-0bf5aadf],
+.reply[data-v-5a191921],
 .el-input,
 .el-textarea,
 .markdown-editor,
@@ -552,7 +552,7 @@ h2[data-v-82d0a8cc],
 .site-theme-dark .el-select-dropdown:hover,
 .site-theme-dark .el-dropdown-menu:hover,
 .input-shadow .el-input__inner:hover,
-.reply[data-v-0bf5aadf]:hover,
+.reply[data-v-5a191921]:hover,
 .el-input:hover,
 .el-textarea:hover,
 .markdown-editor:hover,
@@ -772,8 +772,13 @@ h2[data-v-82d0a8cc],
 }
 
 /* fix reply overflow */
-.reply[data-v-0bf5aadf] {
+.reply[data-v-5a191921] {
     overflow: visible;
+}
+
+/* fix bio overflow */
+.content-wrap[data-v-2cf72664] {
+    overflow-x: hidden;
 }
 
 /* fav studios bg */
@@ -892,7 +897,7 @@ h2[data-v-82d0a8cc],
 .about b[href="weebsquad_outer"] {
     position: fixed;
     bottom: 0;
-	left: -300px;
+	right: -340px;
 	margin-bottom: 10px;
     width: 350px;
     height: 64px;
@@ -903,7 +908,7 @@ h2[data-v-82d0a8cc],
 }
 
 .about b[href="weebsquad_outer"]:hover {
-	left: 0;
+	right: -20px;
 }
 
 .about b[href="weebsquad_outer"] a[href="https://weebsquad.moe/"] {
