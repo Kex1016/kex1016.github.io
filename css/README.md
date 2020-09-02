@@ -9,9 +9,15 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 - [`AL_redesign.css`](https://kex1016.github.io/css/AL_redesign.css/): The main framework for some of my future themes. No screenshots.
 - [`AL_redesign-bofuri.css`](https://kex1016.github.io/css/AL_redesign-bofuri.css/): Bofuri theme for my eigth profile theme. [Screenshot soon]
 
-## Currently using: `AL_redesign.css` & `AL_redesign-bofuri.css`
+## Currently using: `botan.css`
 
 ## Changelog:
+### 2.2.0
+`botan.css`
+- Added the Weeb Squad link design
+- Fixed some overflow issues
+- Fixed the replies not getting styled properly
+
 ### 2.1.1
 `AL_redesign-bofuri.css`
 - Replaced the links in my bio
