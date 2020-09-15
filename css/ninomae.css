@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+@font-face {
+	font-family: "Merge";
+	src: url("https://files.weebsquad.moe/VIbRNd3p.eot");
+	/* IE9*/
+	src: url("https://files.weebsquad.moe/VIbRNd3p.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("https://files.weebsquad.moe/oUXRxItU.woff2") format("woff2"),
+		/* chrome、firefox */
+		url("https://files.weebsquad.moe/IP4OxkKk.woff") format("woff"),
+		/* chrome、firefox */
+		url("https://files.weebsquad.moe/ijJHDdhE.ttf") format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url("https://files.weebsquad.moe/XtHiffb0.svg#Byker W00 Regular") format("svg");
+	/* iOS 4.1- */
+}
+
+@font-face {
+	font-family: "Aspira";
+	src: url("https://files.weebsquad.moe/6zN2YFEg.eot");
+	/* IE9*/
+	src: url("https://files.weebsquad.moe/6zN2YFEg.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("https://files.weebsquad.moe/RSJNt9nm.woff2") format("woff2"),
+		/* chrome、firefox */
+		url("https://files.weebsquad.moe/BJAafwhj.woff") format("woff"),
+		/* chrome、firefox */
+		url("https://files.weebsquad.moe/XmEykLPB.ttf") format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url("https://files.weebsquad.moe/Xw5ZACDv.svg#Byker W00 Regular") format("svg");
+	/* iOS 4.1- */
+}
+
+/* Fonts! */
+/* - Merge */
+* {
+	font-family: "Merge", sans-serif !important;
+}
+
+/* - Aspira */
+h1,
+h2,
+h3,
+h4,
+h5,
+.text .name[data-v-5e514b1e],
+.stat .value[data-v-815ccddc],
+.name[data-v-5a191921] {
+	font-family: "Aspira", sans-serif !important;
+}
+
+/* - Neucha */
+.text[data-v-5e514b1e] .markdown *,
+.reply[data-v-5a191921] .markdown * {
+	font-family: "Neucha", cursive !important;
+}
+
+/* Remove banner boundaries, noone needs that shit */
+.banner .container[data-v-5445dac8] {
+	margin: 0;
+	padding: 0;
+	position: initial;
+}
+
+/* Name looks pretty cool now */
+.banner-content h1.name {
+	display: none;
+}
+
+/* cool shadows */
+.header-wrap,
+.about,
+.activity-history[data-v-514856af],
+.genre-overview[data-v-aedb6876],
+.overview .favourites>.favourites-wrap,
+.activity-entry[data-v-5e514b1e]:not(.activity-text):not(.activity-message) .wrap[data-v-5e514b1e] {
+	box-shadow: 0 0 36px rgba(0, 0, 0, 0.5)
+}
+
+/* Header right below navbar */
+.header-wrap[data-v-5445dac8] {
+	position: relative;
+}
+
+.banner[data-v-5445dac8] {
+	z-index: 10;
+}
+
+.nav-wrap[data-v-5445dac8] {
+	z-index: 10000;
+}
+
+/* Follower badge put out of the way */
+.follower-badge[data-v-5445dac8] {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0;
+}
+
+/* No hiding, navbar! */
+.hide[data-v-4fbac4e1] {
+	top: 0 !important;
+}
+
+/* Navbar colors, fixed! */
+.site-theme-dark .nav-unscoped {
+	background: rgba(35, 38, 67, .5) !important;
+	color: white !important;
+}
+
+.site-theme-dark .nav-unscoped.transparent {
+	background: transparent !important;
+}
+
+/* more navbar stuff */
+.wrap[data-v-4fbac4e1] {
+	max-width: 100%;
+}
+
+/* Stats page */
+/* - no need for the milestones */
+.footer[data-v-815ccddc] * {
+	display: none;
+}
+
+/* Actions actually done well */
+.actions[data-v-5445dac8] {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	bottom: -41px;
+	margin-right: 10px;
+}
+
+/* Follow btn */
+.nav-btn[data-v-5445dac8] {
+	width: 100px;
+	border-radius: 0;
+	background: #5B5253;
+}
+
+.nav-btn[data-v-5445dac8]:hover {
+	background: #7d7576;
+}
+
+/* Dropdown lookin smooth */
+.dropdown[data-v-5445dac8] {
+	position: absolute;
+	right: 120px;
+	top: 8px;
+}
+
+/* Avatar is big! */
+.avatar[data-v-5445dac8] {
+	max-width: 230px;
+	max-height: 240px;
+}
+
+/* ew, ugliness */
+.wrap[data-v-82d0a8cc],
+.footer[data-v-82d0a8cc] {
+	margin-top: 0;
+}
+
+/* Background */
+.user-page-unscoped {
+	padding-top: 95px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 0;
+	background-image: linear-gradient(rgba(34, 34, 51, .7), rgba(34, 34, 51, .7)), url("https://files.weebsquad.moe/38hHffN5.png") !important;
+}
+
+/* AL logo */
+.logo img[data-v-4fbac4e1] {
+	content: url(https://files.weebsquad.moe/HoynZ7CD.png);
+	height: 90%;
+	width: auto;
+}
+
+.logo[data-v-4fbac4e1] {
+	height: 100%;
+	width: auto;
+}
+
+/* remove bgs */
+.wrap[data-v-5e514b1e] {
+	background: transparent;
+}
+
+/* Not textbook */
+.overview[data-v-2cf72664] .content-wrap:not([data-v-2cf72664]),
+.header-wrap[data-v-5445dac8],
+.activity-entry[data-v-5e514b1e]:not(.activity-text):not(.activity-message) .wrap[data-v-5e514b1e],
+.list-stats[data-v-815ccddc],
+.user-page-unscoped .markdown-editor,
+.el-input,
+.el-textarea {
+	background: #526957 !important;
+	border: 13px solid #5B5253;
+	border-radius: 10px;
+	color: white;
+}
+
+/* below banner bg */
+.nav-wrap[data-v-5445dac8] {
+	background: #526957;
+}
+
+/* stat titles */
+.stat .value[data-v-815ccddc] {
+	font-size: 200%;
+}
+
+.stat .label[data-v-815ccddc] {
+	font-size: 90%;
+}
+
+/* stat dividers */
+.stat[data-v-815ccddc]:nth-of-type(1) {
+	border-right: 1px white solid;
+}
+
+.stat[data-v-815ccddc]:nth-of-type(2) {
+	border-right: 1px white solid;
+	border-left: 1px white solid;
+}
+
+.stat[data-v-815ccddc]:nth-of-type(3) {
+	border-left: 1px white solid;
+}
+
+/* white stuff */
+.nav .link[data-v-5445dac8]:not(.router-link-active),
+.stat .value[data-v-815ccddc] {
+	color: white;
+}
+
+/* link stuff */
+.nav .link[data-v-5445dac8].router-link-active,
+.nav .link[data-v-5445dac8]:hover,
+.stat .label[data-v-815ccddc] {
+	color: #a2a2a2;
+}
+
+.overview .favourites>.favourites-wrap {
+	padding: 20px 15px !important;
+	background-color: #526957 !important;
+	border: 13px solid #5B5253;
+	max-width: 460px;
+	overflow: visible;
+}
+
+/* Textbook style test */
+.about {
+	padding: 12px;
+	background: #5B5253;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.about .content-wrap[data-v-2cf72664] {
+	background-image: url(https://files.weebsquad.moe/guU5H3uc.png);
+	background-position-y: 18px;
+	background-size: 31px;
+	margin: 0;
+}
+
+.about .content-wrap .markdown[data-v-2cf72664] *:not(a) {
+	color: #5b5253;
+}
+
+.history-day[data-v-514856af] {
+	border: 1px solid #5b5253;
+	border-radius: 0;
+}
+
+/* no need for borders on favs */
+.favourite,
+.activity-entry[data-v-5e514b1e]:not(.activity-manga_list):not(.activity-anime_list) .wrap[data-v-5e514b1e],
+.name[data-v-aedb6876],
+.reply[data-v-5a191921],
+.button[data-v-93c5960c],
+.load-more[data-v-6f203cf2] {
+	border-bottom-left-radius: 15px 255px !important;
+	border-bottom-right-radius: 225px 15px !important;
+	border-top-left-radius: 255px 15px !important;
+	border-top-right-radius: 15px 225px !important;
+}
+
+/* button */
+.button[data-v-93c5960c],
+.load-more[data-v-6f203cf2] {
+	background: #5B5253;
+	border: 1px black solid;
+}
+
+/* fav hover effect */
+.favourite {
+	transform: none;
+	transition: .3s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+	z-index: 10;
+
+	position: relative;
+}
+
+.favourite:hover {
+	transform: rotate(0) translateX(0) scale(1.2) !important;
+	z-index: 15;
+}
+
+.favourite::after {
+	content: "";
+
+	position: absolute;
+	top: -15%;
+	left: -20%;
+	width: 140% !important;
+	height: 135% !important;
+
+	background-image: url(https://files.weebsquad.moe/jnlLsfsZ.png) !important;
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+/* "Random" favorites */
+.favourite:nth-of-type(6n+1) {
+	transform: rotate(23deg);
+}
+
+.favourite:nth-of-type(3n+4) {
+	transform: rotate(-12deg) translateX(-15px);
+}
+
+.favourite:nth-of-type(8n+5) {
+	transform: rotate(42deg) translateX(20px);
+}
+
+.favourite:nth-of-type(10n+2) {
+	transform: rotate(6deg);
+}
+
+.favourite:nth-of-type(7n+4) {
+	transform: rotate(30deg) translateY(13px) translateX(-21px);
+}
+
+/* get rid of genre percents */
+.percentage-bar[data-v-aedb6876] {
+	display: none;
+}
+
+/* Section headers should be bigger */
+.overview[data-v-2cf72664] .section-header {
+	font-size: 200%;
+}
+
+/* Notes! */
+.activity-entry[data-v-5e514b1e]:not(.activity-manga_list):not(.activity-anime_list) .wrap[data-v-5e514b1e],
+.reply[data-v-5a191921] {
+	background: #ffcc7d;
+}
+
+.text .name[data-v-5e514b1e],
+.name[data-v-5a191921] {
+	font-size: 3rem;
+	color: #fa797d;
+}
+
+.text .activity-markdown[data-v-5e514b1e],
+.reply[data-v-5a191921] .markdown {
+	color: #5b5253;
+	font-size: 115%;
+}
+
+.text .header[data-v-5e514b1e] {
+	position: relative;
+	z-index: 10;
+}
+
+.text .header[data-v-5e514b1e]::after {
+	content: "";
+
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 60px;
+	height: 60px;
+
+	background-image: url(https://files.weebsquad.moe/jnlLsfsZ.png);
+	background-size: contain;
+}
+
+/* post - corner thing with time */
+.time[data-v-5e514b1e] {
+	margin-right: 15px
+}
+
+.time[data-v-5e514b1e],
+.extras-dropdown .el-dropdown-link[data-v-5e514b1e],
+.actions[data-v-5a191921],
+.actions[data-v-5a191921] .time {
+	color: white;
+}
+
+.activity-entry>.wrap>.time:hover {
+	background-color: transparent;
+}
+
+/* post - likes and comments */
+.actions[data-v-5e514b1e] {
+	color: white;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+/* dropdown on activities */
+.activity-extras-dropdown.el-popper[x-placement^=bottom][data-v-5e514b1e] {
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+/* Why are poppers a thing? */
+.site-theme-dark .el-popper[x-placement^="bottom"] .popper__arrow,
+.site-theme-dark .el-popper[x-placement^="bottom"] .popper__arrow::after,
+.tooltip[data-v-9401173e]:after {
+	display: none;
+}
+
+/* FUN PART: PSEUDO ELEMENTS!!! */
+b[href="menu_outer"] {
+	position: fixed;
+	top: calc(50% - 50px);
+	left: 0;
+	width: 40px;
+	height: 100px;
+	background-color: #5B5253;
+	background-image: url(https://files.weebsquad.moe/5gGIH8Q5.png);
+	background-position: center;
+	background-size: 30px;
+	background-repeat: no-repeat;
+
+	padding-left: 5px;
+	padding-right: 5px;
+
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	z-index: 1000;
+
+	transition: .2s ease-in-out !important;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+b[href="menu_outer"] b[href="menu_inner"] {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	background-color: #5b5253;
+	box-shadow: 10px 5px 20px transparent;
+
+	transform: translateX(-100%);
+
+	transition: .2s ease-in-out !important;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+b[href="menu_outer"]:hover {
+	left: 250px;
+}
+
+b[href="menu_outer"]:hover b[href="menu_inner"] {
+	box-shadow: 10px 5px 20px rgba(0, 0, 0, .5);
+	transform: translateX(0);
+
+	transition: .2s ease-in-out !important;
+}
+
+b[href="menu_outer"] b[href="menu_inner"] b[href="menu_title"] {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 75px;
+	padding-top: 15px;
+	text-align: center;
+	background: #332e2e;
+}
+
+b[href="menu_outer"] b[href="menu_inner"] b[href="menu_title"]::after {
+	content: "Links";
+	color: white;
+	font-size: 30px;
+}
+
+b[href="menu_outer"] b[href="menu_inner"] a {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: transparent;
+	text-align: center;
+	transition: .2s linear;
+}
+
+b[href="menu_outer"] b[href="menu_inner"] a:hover {
+	background: #526957;
+	color: white;
+}
+
+a[href="https://weebsquad.moe"]::after {
+	content: "Weeb Squad";
+	font-size: 20px;
+}
+
+a[href="https://weebsquad.moe/about/kex"]::after {
+	content: "More about me";
+	font-size: 20px;
+}
+
+a[href="https://weebsquad.moe/about/kex/music"]::after {
+	content: "Music stuff";
+	font-size: 20px;
+}
+
+a[href="https://weebsquad.moe/about/kex/badges"]::after {
+	content: "Badges";
+	font-size: 20px;
+}
+
+/* spolier bg */
+.markdown .markdown-spoiler.spoiler-visible .hide-spoiler,
+.markdown .markdown-spoiler.spoiler-visible span {
+	background: rgb(var(--color-background), .4);
+	color: white;
+}
+
+.markdown .markdown-spoiler.spoiler-visible i.hide-spoiler {
+	color: #5b5253;
+}
+
+/* I fucking hate AL input styling */
+.el-input-group__append,
+.el-input-group__prepend,
+.el-input__inner,
+.el-textarea__inner,
+.el-input,
+.el-textarea {
+	background: transparent;
+}
