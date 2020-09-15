@@ -8,10 +8,15 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 - [`release the spyce.css`](https://kex1016.github.io/css/release_the_spyce.css/): I use this theme for my seventh profile theme based around RELEASE THE SPYCE [Screenshot soon]
 - [`AL_redesign.css`](https://kex1016.github.io/css/AL_redesign.css/): The main framework for some of my future themes. No screenshots.
 - [`AL_redesign-bofuri.css`](https://kex1016.github.io/css/AL_redesign-bofuri.css/): Bofuri theme for my eigth profile theme. [Screenshot soon]
+- [`ninomae.css`](https://kex1016.github.io/css/ninomae.css/): TENTACULT RISE UP. [Screenshot soon]
 
 ## Currently using: `botan.css`
 
 ## Changelog:
+## 2.3.0
+`ninomae.css`
+- Added the theme
+
 ### 2.2.0
 `botan.css`
 - Added the Weeb Squad link design
