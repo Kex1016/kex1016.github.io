@@ -13,6 +13,12 @@ I store all my CSS works for my [AniList](https://anilist.co/user/Kex1016/) prof
 ## Currently using: `ninomae.css`
 
 ## Changelog:
+## 2.3.1
+`ninomae.css`
+- Fixed the stuff AniList broke. The new embeds look real cool tho
+- Added:
+  - Two new links to the sidebar
+
 ## 2.3.0
 `ninomae.css`
 - Added the theme
