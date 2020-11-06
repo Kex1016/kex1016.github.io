@@ -329,6 +329,18 @@
     --color-blue-dim: 179, 155, 204 !important;
 }
 
+.desktop, .activity-entry,
+.about[data-v-5c30286e],
+.list-stats.content-wrap[data-v-5c30286e] {
+    position:relative;
+    margin-top: 25px;
+}
+
+.overview[data-v-5c30286e] .content-wrap,
+.section .favourites {
+    margin-top: 45px;
+}
+
 /* FONTS */
 /* - Light body */
 .stat .value[data-v-815ccddc],
@@ -396,7 +408,9 @@ h2[data-v-82d0a8cc],
 .section:last-of-type::before,
 .medialist.table .section-name,
 .name[data-v-5445dac8],
-.links[data-v-4fbac4e1] {
+.links[data-v-4fbac4e1],
+.section .favourites,.list-stats[data-v-5c30286e]:first-of-type::before,
+.about[data-v-5c30286e]::before {
     font-weight: 700;
     font-family: 'Sequel Sans Heavy Head', sans-serif;
 }
@@ -405,7 +419,7 @@ h2[data-v-82d0a8cc],
 .percentage-bar[data-v-aedb6876],
 .footer[data-v-815ccddc],
 .user .chevron[data-v-4fbac4e1],
-.overview[data-v-2cf72664] .section-header,
+.overview[data-v-5c30286e] .section-header,
 .hohDownload,
 .has-label:hover.has-label[data-v-5e514b1e]:before,
 .nav .link[data-v-5445dac8]:nth-of-type(4),
@@ -416,7 +430,8 @@ h2[data-v-82d0a8cc],
 .theme-selector,
 .hohColourPicker,
 .site-theme-dark .el-popper[x-placement^="bottom"] .popper__arrow,
-.site-theme-dark .el-popper[x-placement^="bottom"] .popper__arrow::after {
+.site-theme-dark .el-popper[x-placement^="bottom"] .popper__arrow::after,
+.about .markdown h5 {
     display: none;
 }
 
@@ -451,29 +466,41 @@ h2[data-v-82d0a8cc],
 .about[data-v-2cf72664]::before,
 .desktop[data-v-514856af]::before,
 .desktop[data-v-aedb6876]::before,
-.section[data-v-2cf72664] .favourites[data-v-45543a61]::before,
+.section .favourites::before,
 .activity-entry::before,
-.section:last-of-type::before {
+.section:last-of-type::before,
+.about[data-v-5c30286e]::before,
+.list-stats[data-v-5c30286e]:first-of-type::before {
+    display: flex;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 700 !important;
     color: rgb(var(--color-subtitle));
     background: rgb(var(--color-foreground-darker));
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-    padding: 5px 50% 5px 10px;
-    position: relative;
+    padding: 5px 15px;
+    position: absolute;
     transition: background .2s;
-    max-width: 50%;
+    width: 50%;
+    top: -30px;
+    height: 30px;
 }
 
-.el-message-box__wrapper::before {
+.list-stats[data-v-5c30286e]:first-of-type::before {
+    width: 100%;
+    font-size: 17px;
+}
+
+.el-message-box::before {
     font-style: italic;
     font-weight: 700;
     color: rgb(var(--color-subtitle));
     background: rgb(var(--color-foreground-darker));
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
     padding: 5px 5% 5px 10px;
-    position: relative;
+    position: absolute;
     transition: background .2s;
+    top: 0;
+    left: 0;
 }
 
 .medialist.table .section-name {
@@ -484,27 +511,20 @@ h2[data-v-82d0a8cc],
     background: rgb(var(--color-foreground-darker));
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
     padding: 5px 10% 5px 10px;
-    position: relative;
+    position: absolute;
     transition: background .2s;
     margin: 0;
+    top: -31px;
 }
 
-/* Positioning */
-/* - 3.5px */
-.desktop[data-v-aedb6876]::before,
-.desktop[data-v-514856af]::before,
-.about[data-v-2cf72664]::before,
-.activity-entry::before,
-.section:last-of-type::before {
-    bottom: 3.5px;
-}
-/* - 2.5px */
-.section[data-v-2cf72664] .favourites[data-v-45543a61]::before {
-    bottom: 2.5px;
+.theme-switch[data-v-17f4caca] {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
 }
 
-.about[data-v-2cf72664]::before {
-    content: 'Agent Profile';
+.about[data-v-5c30286e]::before {
+    content: 'Agent\'s Biography';
 }
 
 .desktop[data-v-514856af]::before {
@@ -541,7 +561,7 @@ h2[data-v-82d0a8cc],
     content: 'Manga Entry';
 }
 
-.section:last-of-type::before {
+.list-stats[data-v-5c30286e]:first-of-type::before {
     content: "Agent's stats";
 }
 
@@ -564,8 +584,8 @@ h2[data-v-82d0a8cc],
 }
 
 /* replace images in my bio */
-.about .content-wrap .markdown[data-v-2cf72664] img[src="https://files.weebsquad.moe/RNbtpIPT.png"] {
-    content: url("https://files.weebsquad.moe/iyFSGqXa.png");
+.about .content-wrap .markdown[data-v-5c30286e] img[src="https://files.weebsquad.moe/Cj9bwZPG.png"] {
+    content: url("https://files.weebsquad.moe/rXMwa505.png");
 }
 
 /* banner content */
@@ -644,6 +664,10 @@ h2[data-v-82d0a8cc],
     top: 10px
 }
 
+.list-stats[data-v-815ccddc] {
+    overflow:visible;
+}
+
 /* history day overhaul */
 /* - lv. 0 */
 .history-day[data-v-514856af] {
@@ -704,7 +728,7 @@ h2[data-v-82d0a8cc],
 }
 
 /* stats wrap */
-.stats-wrap[data-v-2cf72664] {
+.stats-wrap[data-v-5c30286e] {
     grid-column-gap: 0;
 }
 
@@ -788,7 +812,7 @@ h2[data-v-82d0a8cc],
     content: 'Type a valid image link to embed:';
 }
 .el-message-box__wrapper[aria-label="Add WebM Video"] .el-message-box__message::after {
-    content: 'Type a valid video link to ember (mp4, webm, mkv, etc.):';
+    content: 'Type a valid video link to embed (mp4, webm, mkv, etc.):';
 }
 
 /* button fixes */
@@ -849,7 +873,7 @@ h2[data-v-82d0a8cc],
     box-shadow: inset 0 0 0 0 rgba(var(--color-foreground-darker), 1);
     padding-right: 20px;
     clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
-    transition: .5s ease-in;
+    transition: .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .text .header[data-v-5e514b1e]:hover {
     box-shadow: inset 400px 0 0 0 rgba(var(--color-foreground-darker), 1);
@@ -875,7 +899,7 @@ h2[data-v-82d0a8cc],
     box-shadow: inset 0 0 0 0 rgba(var(--color-foreground-darker), 1);
     clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
     z-index: 1;
-    transition: .5s ease-in;
+    transition: .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .name[data-v-5a191921]:hover {
     box-shadow: inset 400px 0 0 0 rgba(var(--color-foreground-darker), 1);
@@ -1087,18 +1111,17 @@ h2[data-v-82d0a8cc],
 
 /* fancy list entry titles */
 .list .title[data-v-5e514b1e],
-.markdown a:not(.about a) {
+.activity-entry a:not(.name):not(.avatar):not(.cover) {
     background-image: linear-gradient(120deg, rgb(var(--color-foreground-darker)) 0%, rgb(var(--color-foreground-darker)) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
-    background-position: 0 88%;
-    color: white;
-    transition: background-size 0.25s cubic-bezier(0.005, 0.550, 1.000, 0.640);
+    background-position: 0 100%;
+    transition: background-size 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     padding-bottom: 1px;
     padding-right: 1px;
 }
 
 .list .title[data-v-5e514b1e]:hover,
-.markdown a:not(.about a):hover {
+.activity-entry a:not(.name):not(.avatar):not(.cover):hover {
     background-size: 100% 88%;
 }
