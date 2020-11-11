@@ -1,0 +1,207 @@
+/*=================================
+    Vertical navbar
+=================================*/
+/*modified code from Kuwabara: https://userstyles.org/styles/161017/my-little-anilist-theme-can-not-be-this-cute*/
+
+.hohDismiss {
+    transform: translate(17.5px, -40px);
+    margin-left: 0px!important;
+}
+
+#app>.nav {
+    border-top: none !important;
+}
+
+#app div#nav.nav {
+    width: 65px;
+    height: 100%!important;
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    transition: none!important;
+}
+
+div#nav.transparent {
+    background: rgba(var(--color-nav))!important;
+}
+
+.nav .wrap .links {
+    font-size: 1rem;
+    height: 355px!important;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 65px;
+    min-width: 65px !important;
+    flex-direction: column;
+}
+
+#app #nav.nav .wrap .links a.link {
+    width: 65px;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: unset!important;
+    transition: 0.3s;
+    padding-left: 0px!important;
+}
+
+#app #nav.nav .browse-wrap {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.browse-wrap.subMenuContainer .dropdown {
+    display: none;
+}
+
+#app #nav.nav .browse-wrap .dropdown {
+    z-index: 2000;
+}
+
+div#nav.nav .link.router-link-exact-active.router-link-active, #nav>div>div.links>a:hover {
+    border-bottom-width: 0px!important;
+}
+
+.nav .wrap .links>.link:hover, .nav .wrap .links div .link:hover, .nav .browse-wrap:hover {
+    background: rgba(var(--color-blue), 0.1);
+}
+
+.nav .wrap .links .link::before {
+    display: block;
+    content: "";
+    height: 24px!important;
+    width: 65px!important;
+    background-size: 24px;
+    margin-left: 0!important;
+    margin-bottom: 3px!important;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%) brightness(1.4);
+}
+
+.nav .link[href*="/user/"]:hover::before, .nav .link[href^="/forum/"]:hover::before, .nav .link[href="/login"]::before, .nav .link[href="/social"]::before, .nav .link[href^="/search/"]:hover::before, .nav .link[href^="/home"]:hover::before, .site-theme-contrast .nav .link.router-link-active::before {
+    filter: grayscale(0%);
+}
+
+.nav .link[href="/home"]::before, .nav .link[href="/login"]::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><path d="m12 3l-10 9h3v8h5v-6h4v6h5v-8h3z" fill="rgb(61,180,242)"/></svg>');
+}
+
+.nav .link[href^="/user/"]::before, .nav .link[href="/social"]::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2zM12 6a3 3 0 0 0 0 6a3 3 0 0 0 0 -6zM6 18h12v-1a6 3 0 0 0 -12 0z" fill="rgb(61,180,242)"/></svg>');
+}
+
+.nav .link[href*="/animelist"]::before, .nav .link[href*="/mangalist"]::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><path d="M4 5h4v4h-4zM4 10h4v4h-4zM4 15h4v4h-4zM9 5h12v4h-12zM9 10h12v4h-12zM9 15h12v4h-12z" fill="rgb(61,180,242)"/></svg>');
+}
+
+.nav .link[href^="/search/"]::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><path d="M4 5h5v13h-5zM10 5h11v6h-11zM10 12h5v6h-5zM16 12h5v6h-5z" fill="rgb(61,180,242)"/></svg>');
+}
+
+.nav .link[href*="/forum"]::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><path d="M19 6h2a1 1 0 0 1 1 1v15l-4 -4h-11a1 1 0 0 1 -1 -1v-2h13zM3 2a1 1 0 0 0 -1 1v14l4 -4h10a1 1 0 0 0 1 -1v-9a1 1 0 0 0 -1 -1z" fill="rgb(61,180,242)"/></svg>');
+}
+
+.nav .link[href="/signup"]::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><g fill="rgb(61,180,242)"><circle cx="15" cy="8" r="3"/><path d="M9 18h12v-1a6 3 0 0 0 -12 0z"/><text x="2" y="14" font-weight="bold" font-size="70%">+</text></g></svg>');
+}
+
+.landing .link {
+    margin-left: unset!important;
+}
+
+#nav>div.wrap.guest>div.links a.link.login, #nav>div.wrap.guest>div.links a.link.signup {
+    padding: 5px 0px!important;
+}
+
+div#nav.transparent {
+    background: #1f2631!important;
+}
+
+#app {
+    margin-top: 0;
+    padding-left: 65px;
+}
+
+.nav .user {
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-gap: 40px;
+    width: 65px;
+    grid-template-rows: 50px 20px;
+}
+
+.nav .user-wrap .dropdown {
+    left: -2px;
+    z-index: 2000;
+}
+
+.nav .user-wrap .dropdown::before {
+    left: 16px;
+}
+
+.search .dropdown.el-dropdown {
+    font-size: 10px;
+}
+
+.search .el-dropdown-link svg {
+    width: 65px;
+    height: 23px;
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav .search {
+    width: 65px;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    top: 56px;
+}
+
+.quick-search-results {
+    z-index: 999!important;
+    top: 136px!important;
+}
+
+.user .avatar+.chevron {
+    opacity: 0!important;
+}
+
+.hide {
+    top: 0px!important;
+}
+
+@media(max-width: 1040px) {
+    #app {
+        padding-left: 0px;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer>.container {
+        position: relative;
+    }
+    .hohColourPicker {
+        top: 0px;
+    }
+    .hohDismiss {
+        display: none;
+    }
+    .hohNotificationCake {
+        margin-left: -9px;
+    }
+}
+
+/* Fix logo */
+.wrap[data-v-4fbac4e1] {position:relative}
+.logo {
+    position: absolute;
+    bottom: 10px;
+}
+/*-------------------*/
