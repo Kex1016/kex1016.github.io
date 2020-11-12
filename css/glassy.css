@@ -1,6 +1,6 @@
 /*
 
-   G L A S S Y - v1.0 - By cakes
+   G L A S S Y - v1.1 - By cakes
 
    Hello, nice to meet you. If you're not me, then please don't outright steal my code. Ask me nicely and I'll
    definitely help you out.
@@ -9,13 +9,14 @@
    
    Changelog:
    v1.0 - Initial release.
+   v1.1 - Some fixes that I left out. Oops.
+    - Dropdowns and list entries have a background animation now
+    - replies are properly themed
 
 */
 
-@import url(https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css);
 @import url("https://fonts.googleapis.com/css?family=K2D");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
 /*=================================
     colors
 =================================*/
@@ -142,6 +143,8 @@
 
 .banner .actions {
     margin: 0;
+    padding: 0;
+    padding-bottom: 1rem
 }
 
 .banner .actions .nav-btn {
@@ -197,7 +200,7 @@
     border radius
 =================================*/
 
-.content-wrap, .content.container, .header-wrap, .wrap[data-v-5e514b1e], .favourites.preview .favourites-wrap .favourite[data-v-45543a61], .favourites.preview .favourites-wrap>div[data-v-45543a61], .user-page-unscoped .markdown-editor, .el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea__inner, .medialist .filters .filter-group:first-child > span, .medialist.table .list-section, .theme-switch[data-v-17f4caca], .favourites-wrap[data-v-45543a61], .bar-chart-wrap[data-v-46edc0ca], .line-chart-wrap[data-v-84e71bc6], [data-v-72dc5b51] .horizontal-scroller, .line-chart-wrap[data-v-84e71bc6], .filter-group a.router-link-active[data-v-1e00b9da], .filter-group span.active[data-v-310d8b7e], .hohThemeSwitch, .user-follow .follow-card, .name[data-v-39573fe2], .avatar[data-v-39573fe2], .thread-card[data-v-70ae1ba4], .comment-wrap[data-v-768af104], .dropdown[data-v-0bb70ffa], .dropdown[data-v-0bb70ffa], .footer[data-v-0bb70ffa], .dropdown[data-v-38edf8f8], .footer[data-v-38edf8f8] {
+.content-wrap, .content.container, .header-wrap, .wrap[data-v-5e514b1e], .favourites.preview .favourites-wrap .favourite[data-v-45543a61], .favourites.preview .favourites-wrap>div[data-v-45543a61], .user-page-unscoped .markdown-editor, .el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea__inner, .medialist .filters .filter-group:first-child > span, .medialist.table .list-section, .theme-switch[data-v-17f4caca], .favourites-wrap[data-v-45543a61], .bar-chart-wrap[data-v-46edc0ca], .line-chart-wrap[data-v-84e71bc6], [data-v-72dc5b51] .horizontal-scroller, .line-chart-wrap[data-v-84e71bc6], .filter-group a.router-link-active[data-v-1e00b9da], .filter-group span.active[data-v-310d8b7e], .hohThemeSwitch, .user-follow .follow-card, .name[data-v-39573fe2], .avatar[data-v-39573fe2], .thread-card[data-v-70ae1ba4], .comment-wrap[data-v-768af104], .dropdown[data-v-0bb70ffa], .dropdown[data-v-0bb70ffa], .footer[data-v-0bb70ffa], .dropdown[data-v-38edf8f8], .footer[data-v-38edf8f8], .reply[data-v-5a191921] {
     border-radius: 10px !important;
 }
 
@@ -208,7 +211,7 @@
     background: transparent;
 }
 
-.content-wrap, .content.container, .header-wrap, .header-wrap, .wrap[data-v-82d0a8cc] .footer, .user-page-unscoped .markdown-editor, .el-message-box, .el-message-box .el-input__inner, .filter-group .active[data-v-6c3edee8], .site-theme-dark .quick-search.el-select .el-input.el-input__inner, .site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner, .site-theme-dark .el-select-dropdown, .site-theme-dark .el-dropdown-menu, .site-theme-dark .el-dropdown-menu__item--divided::before, .el-select-dropdown__item.hover, .el-select-dropdown__item:hover, .el-select__tags .el-tag, .el-select__tags .el-tag--info, .medialist.table .list-section, .theme-switch[data-v-17f4caca], .highlight .circle[data-v-72dc5b51], .bar-chart-wrap[data-v-46edc0ca], .x-axis[data-v-3251fadf], .switch[data-v-05bb5e72], .pie-chart[data-v-26dc9635], .line-chart-wrap[data-v-84e71bc6], .x-axis[data-v-3251fadf], .stat-card[data-v-00bfdb9a], .relations-wrap[data-v-00bfdb9a], .hohTable, .hohTable .header.row, .favourite.studio[data-v-728ccf84], .hohThemeSwitch, .user-follow .follow-card, .markdown .markdown-spoiler.spoiler-visible .hide-spoiler, .markdown .markdown-spoiler.spoiler-visible span, .thread-card[data-v-70ae1ba4], .comment-wrap[data-v-768af104], .dropdown[data-v-0bb70ffa], .footer[data-v-0bb70ffa], .dropdown[data-v-38edf8f8], .footer[data-v-38edf8f8] {
+.content-wrap, .content.container, .header-wrap, .header-wrap, .wrap[data-v-82d0a8cc] .footer, .user-page-unscoped .markdown-editor, .el-message-box, .el-message-box .el-input__inner, .filter-group .active[data-v-6c3edee8], .site-theme-dark .quick-search.el-select .el-input.el-input__inner, .site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner, .site-theme-dark .el-select-dropdown, .site-theme-dark .el-dropdown-menu, .site-theme-dark .el-dropdown-menu__item--divided::before, .el-select-dropdown__item.hover, .el-select-dropdown__item:hover, .el-select__tags .el-tag, .el-select__tags .el-tag--info, .medialist.table .list-section, .theme-switch[data-v-17f4caca], .highlight .circle[data-v-72dc5b51], .bar-chart-wrap[data-v-46edc0ca], .x-axis[data-v-3251fadf], .switch[data-v-05bb5e72], .pie-chart[data-v-26dc9635], .line-chart-wrap[data-v-84e71bc6], .x-axis[data-v-3251fadf], .stat-card[data-v-00bfdb9a], .relations-wrap[data-v-00bfdb9a], .hohTable, .hohTable .header.row, .favourite.studio[data-v-728ccf84], .hohThemeSwitch, .user-follow .follow-card, .markdown .markdown-spoiler.spoiler-visible .hide-spoiler, .markdown .markdown-spoiler.spoiler-visible span, .thread-card[data-v-70ae1ba4], .comment-wrap[data-v-768af104], .dropdown[data-v-0bb70ffa], .footer[data-v-0bb70ffa], .dropdown[data-v-38edf8f8], .footer[data-v-38edf8f8], .reply[data-v-5a191921] {
     background: var(--cc-transp-black);
     backdrop-filter: blur(10px) !important;
 }
@@ -677,130 +680,40 @@
     position: static;
 }
 
-/*=================================
-    buttons
-=================================*/
-.button[data-v-93c5960c] {color: white !important;}
-.actions[data-v-93c5960c], .el-message-box__btns {
-    display: flex;
-    justify-content: center;
+/*===========================
+    anilsit css is bad
+=============================*/
+.time[data-v-5e514b1e] {background:none !important}
+.time[data-v-5e514b1e]:hover {background:none !important}
+
+/*===========================
+    random tweaks
+=============================*/
+.el-dropdown-menu__item {
+    background: linear-gradient(to right, rgb(var(--cc-liberty)) 50%, transparent 50%) right;
+    background-color: transparent;
+    background-size: 200%;
+    transition: background .3s;
+}
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+    background: transparent linear-gradient(to right, rgb(var(--cc-liberty)) 50%, transparent 50%) left;
+    background-size: 200%;
+    background-position: left;
 }
 
-.banner-content>.actions>.nav-btn, .button[data-v-93c5960c], .el-message-box .el-button, .actions>div[data-v-45543a61] {
-    width: 190px;
-    height: 38px;
-    border-radius: 0;
-    border: none;
-    background: rgba(16, 16, 16, .4) !important;
-    box-sizing: border-box;
-    margin: 0 !important;
-    outline: none;
-    position: relative;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: .5em;
+.medialist.table .entry {
+    background: linear-gradient(to left, rgb(var(--cc-liberty)) 50%, transparent 50%) left !important;
+    background-size: 200% !important;
+    transition: background .6s;
+}
+.medialist.table .entry:hover {
+    background: transparent linear-gradient(to left, rgb(var(--cc-liberty)) 50%, transparent 50%) right !important;
+    background-size: 200% !important;
+    background-position: left;
 }
 
-.button[data-v-93c5960c], .el-message-box .el-button, .actions>div[data-v-45543a61] {
-    width: 150px;
-    height: 38px;
-    margin: 0 5px 0 5px !important;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-btn span[data-v-5445dac8] {
-    position: absolute;
-    left: 0;
-    top: 12px;
-    width: 100%;
-    opacity: 1;
-    display: inline;
-    transition: .3s cubic-bezier(0, 0.98, 0.51, 0.93);
-}
-
-.nav-btn span[data-v-5445dac8]:first-of-type {
-    opacity: 1;
-}
-
-.nav-btn:hover span[data-v-5445dac8]:first-of-type {
-    display: inline;
-    opacity: 0;
-}
-
-.nav-btn span[data-v-5445dac8]:last-of-type {
-    display: inline;
-    opacity: 0;
-}
-
-.nav-btn:hover span[data-v-5445dac8]:last-of-type {
-    opacity: 1;
-}
-
-.banner-content>.actions>.nav-btn:hover, .button[data-v-93c5960c]:hover, .el-message-box .el-button:hover, .actions>div[data-v-45543a61]:hover {
-    box-shadow: 0 0 6px rgb(var(--cc-liberty));
-    background: rgba(16, 16, 16, .8) !important;
-    transition: box-shadow 0.3s cubic-bezier(0, 0.98, 0.51, 0.93) 0.5s, background 0.3s cubic-bezier(0, 0.98, 0.51, 0.93) 0.5s;
-}
-
-.banner-content>.actions>.nav-btn:after, .button[data-v-93c5960c]:after, .el-message-box .el-button:after, .actions>div[data-v-45543a61]:after {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 0;
-    right: 0;
-    content: "";
-    border: 1px solid transparent;
-    box-sizing: border-box;
-}
-
-.banner-content>.actions>.nav-btn:hover:after {
-    width: 190px;
-    height: 38px;
-    border: 1px solid rgb(var(--cc-liberty));
-    border-left: none;
-    border-top: none;
-    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
-}
-
-.button[data-v-93c5960c]:hover:after, .el-message-box .el-button:hover:after, .actions>div[data-v-45543a61]:hover:after {
-    width: 150px;
-    height: 38px;
-    border: 1px solid rgb(var(--cc-liberty));
-    border-left: none;
-    border-top: none;
-    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
-}
-
-.banner-content>.actions>.nav-btn:before, .button[data-v-93c5960c]:before, .el-message-box .el-button:before, .actions>div[data-v-45543a61]:before {
-    position: absolute;
-    height: 0;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
-    border: 1px solid transparent;
-    box-sizing: border-box;
-}
-
-.banner-content>.actions>.nav-btn:hover:before {
-    width: 190px;
-    height: 38px;
-    border: 1px solid rgb(var(--cc-liberty));
-    border-right: none;
-    border-bottom: none;
-    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
-}
-
-.button[data-v-93c5960c]:hover:before, .el-message-box .el-button:hover:before, .actions>div[data-v-45543a61]:hover:before {
-    width: 150px;
-    height: 38px;
-    border: 1px solid rgb(var(--cc-liberty));
-    border-right: none;
-    border-bottom: none;
-    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
+.medialist.table .entry:last-of-type {
+    border-radius: 0 0 10px 10px;
 }
 
 /*===========================
