@@ -241,7 +241,7 @@
 }
 
 /*===========================
-    Buttons
+    Load more
 =============================*/
 
 .scroller[data-v-6f203cf2] {
@@ -454,6 +454,132 @@
 
 .scroller[data-v-6f203cf2]:hover .load-more[data-v-6f203cf2]:before {
     bottom: 0%;
+}
+
+/*=================================
+    buttons
+=================================*/
+.button[data-v-93c5960c] {color: white !important;}
+.actions[data-v-93c5960c], .el-message-box__btns {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-content>.actions>.nav-btn, .button[data-v-93c5960c], .el-message-box .el-button, .actions>div[data-v-45543a61] {
+    width: 190px;
+    height: 38px;
+    border-radius: 0;
+    border: none;
+    background: rgba(16, 16, 16, .4) !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    outline: none;
+    position: relative;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+.button[data-v-93c5960c], .el-message-box .el-button, .actions>div[data-v-45543a61] {
+    width: 150px;
+    height: 38px;
+    margin: 0 5px 0 5px !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn span[data-v-5445dac8] {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 100%;
+    opacity: 1;
+    display: inline;
+    transition: .3s cubic-bezier(0, 0.98, 0.51, 0.93);
+}
+
+.nav-btn span[data-v-5445dac8]:first-of-type {
+    opacity: 1;
+}
+
+.nav-btn:hover span[data-v-5445dac8]:first-of-type {
+    display: inline;
+    opacity: 0;
+}
+
+.nav-btn span[data-v-5445dac8]:last-of-type {
+    display: inline;
+    opacity: 0;
+}
+
+.nav-btn:hover span[data-v-5445dac8]:last-of-type {
+    opacity: 1;
+}
+
+.banner-content>.actions>.nav-btn:hover, .button[data-v-93c5960c]:hover, .el-message-box .el-button:hover, .actions>div[data-v-45543a61]:hover {
+    box-shadow: 0 0 6px rgb(var(--cc-liberty));
+    background: rgba(16, 16, 16, .8) !important;
+    transition: box-shadow 0.3s cubic-bezier(0, 0.98, 0.51, 0.93) 0.5s, background 0.3s cubic-bezier(0, 0.98, 0.51, 0.93) 0.5s;
+}
+
+.banner-content>.actions>.nav-btn:after, .button[data-v-93c5960c]:after, .el-message-box .el-button:after, .actions>div[data-v-45543a61]:after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    content: "";
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.banner-content>.actions>.nav-btn:hover:after {
+    width: 190px;
+    height: 38px;
+    border: 1px solid rgb(var(--cc-liberty));
+    border-left: none;
+    border-top: none;
+    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
+}
+
+.button[data-v-93c5960c]:hover:after, .el-message-box .el-button:hover:after, .actions>div[data-v-45543a61]:hover:after {
+    width: 150px;
+    height: 38px;
+    border: 1px solid rgb(var(--cc-liberty));
+    border-left: none;
+    border-top: none;
+    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
+}
+
+.banner-content>.actions>.nav-btn:before, .button[data-v-93c5960c]:before, .el-message-box .el-button:before, .actions>div[data-v-45543a61]:before {
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.banner-content>.actions>.nav-btn:hover:before {
+    width: 190px;
+    height: 38px;
+    border: 1px solid rgb(var(--cc-liberty));
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
+}
+
+.button[data-v-93c5960c]:hover:before, .el-message-box .el-button:hover:before, .actions>div[data-v-45543a61]:hover:before {
+    width: 150px;
+    height: 38px;
+    border: 1px solid rgb(var(--cc-liberty));
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.2s cubic-bezier(0, 0.98, 0.51, 0.93), width 0.4s cubic-bezier(0, 0.98, 0.51, 0.93) 0.2s;
 }
 
 /*===========================
