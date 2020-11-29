@@ -1,21 +1,21 @@
 /*
 
-   G L A S S Y - v1.2b - By cakes
+   G L A S S Y - v1.3 - By cakes
 
    Hello, nice to meet you. If you're not me, then please don't outright steal my code. Ask me nicely and I'll
    definitely help you out.
 
    Inspiration for the theme taken from @Cthdarren. If you're reading this, I really like your theme.
-   
+
    Changelog:
    v1.0 - Initial release.
    v1.1 - Some fixes that I left out. Oops.
    v1.2a - Welcome screen, minor fixes, themed things that I left out
    v1.2b - Fixed shit for the new AL update
+   v1.3 - Welcome screen annoyed the hell out of me lmao
 
 */
 
-@import url(https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css);
 @import url("https://fonts.googleapis.com/css?family=K2D");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 /*=================================
@@ -850,74 +850,6 @@
 }
 
 /*===========================
-    Welcome screen
-=============================*/
-#app::after {
-    content: "Welcome!";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    z-index: 10000;
-    
-    background: rgba(0,0,0,.8);
-    backdrop-filter: blur(0);
-    
-    color: white;
-    font-size: 15rem;
-    font-weight: 700;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1000%;
-    
-    pointer-events: auto;
-    
-    animation: fadein 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) 2s forwards,
-        textin 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) 3s forwards,
-        fadeout 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) 5s forwards;
-    
-    
-}
-/*
-animation: fadein 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) 3s forwards,
-        textin 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) 4s forwards,
-        fadeout 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) 7s forwards;
-*/
-
-@keyframes fadein {
-    from {
-        backdrop-filter: blur(0);
-    }
-    to {
-        backdrop-filter: blur(10px);
-    }
-}
-
-@keyframes textin {
-    from {
-        padding-top: 100%;
-    }
-    to {
-        padding-top: 0;
-    }
-}
-
-@keyframes fadeout {
-    from {
-        pointer-events: auto;
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        pointer-events: none;
-    }
-}
-
-/*===========================
     Animations
 =============================*/
 @keyframes fadeinTR {
@@ -933,4 +865,4 @@ animation: fadein 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) 3s forwards,
         opacity: 1;
         pointer-events: all;
     }
-} 
+}
