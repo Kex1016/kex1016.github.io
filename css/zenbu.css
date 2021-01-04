@@ -4,7 +4,7 @@
 /* Image overrides */
 /* - Banner */
 .banner[data-v-5445dac8] {
-  background-image: url(https://files.weebsquad.moe/BLX6ubFy.png) !important;
+  background-image: url(https://files.weebsquad.moe/nQD4RMSM.gif) !important;
 }
 /* - Avatar */
 .avatar[data-v-5445dac8] {
@@ -523,6 +523,7 @@ body,
 /* Content wrappers */
 .overview[data-v-5c30286e] .content-wrap {
   border-radius: 20px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
 }
 
 /* Bio */
@@ -544,20 +545,169 @@ body,
 
 .favourites-wrap[data-v-45543a61] {
   border-radius: 30px;
+  overflow: visible;
 }
 
 /* activities */
+.activity-entry {
+  background-color: rgb(var(--color-foreground));
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.activity-entry:not(.reply) .wrap > .actions {
+  color: rgb(var(--color-text));
+  margin-top: 15px;
+  padding-left: 5px;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: unset;
+  left: unset;
+  right: 0;
+  bottom: 5px;
+}
+
+.activity-entry .wrap {
+  padding: 10px;
+  padding-bottom: 48px;
+  overflow: visible;
+}
+
+.activity-entry .wrap .list .details {
+  justify-content: flex-start;
+}
+
 .activity-entry .wrap {
   background: none;
+  display: flex;
+  align-items: center;
+}
+
+.activity-entry .wrap .text {
+  padding: 0;
+}
+
+.activity-entry .wrap .text .header {
+  align-items: flex-start;
+}
+
+.activity-entry .wrap .text .header .name {
+  font-family: 'Raleway';
+  height: auto;
+  line-height: unset;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.activity-entry.activity-text .wrap .time,
+.activity-entry.activity-message .wrap .time {
+  position: unset;
+}
+
+.activity-entry.activity-text .wrap .time time,
+.activity-entry.activity-message .wrap .time time {
+  position: absolute;
+  color: rgb(var(--color-text));
+  left: 62px;
+  top: 35px;
+}
+
+.activity-entry.activity-text > .wrap > .time .action,
+.activity-entry.activity-message > .wrap > .time .action {
+  opacity: 1;
+}
+
+.activity-entry.activity-text > .wrap > .time > .action,
+.activity-entry.activity-message > .wrap > .time > .action {
+  position: absolute;
+  opacity: 1;
+  top: 20px;
+  right: 20px;
+}
+
+.activity-entry.activity-text > .wrap > .time > .el-dropdown,
+.activity-entry.activity-message > .wrap > .time > .el-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.activity-entry .wrap .text .activity-markdown {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.activity-entry .actions .action.replies:hover {
+  color: unset;
+}
+
+.activity-entry .actions .action.replies svg {
+    display: inline-block;
+    color: rgb(var(--color-button));
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 9px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.activity-entry .actions .action.replies svg:hover {
+    background-color: rgba(167, 156, 236, 0.1);
+    color: rgb(112, 107, 206);
+    transition: 0.1s;
+}
+
+.activity-entry .actions .action.likes .button {
+  align-items: center;
+}
+
+.activity-entry .actions .action.likes svg {
+  display: inline-block;
+  color: rgb(var(--color-button));
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 9px;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.activity-entry .actions .action.likes .liked svg {
+  color: rgba(231,92,139,1.00);
+}
+
+.activity-entry .actions .action.likes svg:hover {
+  background-color: rgba(219, 116, 145, 0.1);
+  color: rgba(231,92,139,1.00);
+  transition: 0.1s;
+}
+
+.activity-entry .actions .action.likes .button {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+
+.actions .action.replies .count::after {
+  content: ' replies';
+}
+
+.activity-entry .actions .action.replies .count {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;;
+  font-size: 14px;
 }
 
 .activity-entry .reply-wrap .activity-replies {
   padding-top: 20px;
+  margin-top: 5px;
   border-top: 2px solid rgb(var(--color-foreground-grey));
-}
-
-.activity-entry {
-  background-color: rgb(var(--color-foreground));
 }
 
 .reply[data-v-5a191921], .activity-entry .markdown-editor, .activity-entry textarea {
@@ -566,7 +716,11 @@ body,
 }
 
 /* Activity entries and inputs */
-.activity-entry, .activity-entry .wrap, .reply[data-v-5a191921], .markdown-editor, .input, .input textarea {
+.activity-entry .wrap .cover {
+  border-radius: 10px !important;
+}
+
+.activity-entry, .reply[data-v-5a191921], .markdown-editor, .input, .input textarea {
   border-radius: 20px !important;
 }
 
