@@ -4,11 +4,11 @@
 /* Image overrides */
 /* - Banner */
 .banner[data-v-5445dac8] {
-  background-image: url(https://files.weebsquad.moe/nQD4RMSM.gif) !important;
+  background-image: url(https://files.weebsquad.moe/Xoa64Hpg.png) !important;
 }
 /* - Avatar */
 .avatar[data-v-5445dac8] {
-  content: url(https://files.weebsquad.moe/NbpVwhLT.png);
+  content: url(https://files.weebsquad.moe/qaaoPl1C.png);
 }
 
 /* Variables */
@@ -569,12 +569,6 @@ body,
   bottom: 5px;
 }
 
-.activity-entry .wrap {
-  padding: 10px;
-  padding-bottom: 48px;
-  overflow: visible;
-}
-
 .activity-entry .wrap .list .details {
   justify-content: flex-start;
 }
@@ -583,10 +577,15 @@ body,
   background: none;
   display: flex;
   align-items: center;
+  padding: 10px;
+  padding-bottom: 48px;
+  overflow: visible;
+  width: 100%;
 }
 
 .activity-entry .wrap .text {
   padding: 0;
+  flex-grow: 1;
 }
 
 .activity-entry .wrap .text .header {
@@ -795,6 +794,11 @@ body,
 }
 
 /* Lists */
+.medialist.table .entry:last-of-type {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
 .medialist.table .list-section {
   border-radius: 30px;
 }
