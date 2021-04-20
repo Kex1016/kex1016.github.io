@@ -118,7 +118,9 @@ body,
       rgb(var(--color-background), 0.5),
       rgb(var(--color-background), 0.8)
     ),
-    url(https://files.weebsquad.moe/NMouzn6G.jpg) 100% 20% no-repeat;
+    url(https://files.weebsquad.moe/GM9ul3Km.png) 100% 20% no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
   position: relative;
 }
 
