@@ -1,0 +1,1124 @@
+/*
+
+    Mango v1.0
+      Custom CSS for AniList
+        By /user/115130/
+          (cakes)
+
+    Sections (Search the ID with CTRL + F to jump to them):
+      [mango-1]     Colors and fonts
+      [mango-2]     Manga styled elements
+      [mango-3]     Header tweaks
+      [mango-4]     Remove unnecessary elements
+      [mango-5]     Various random tweaks
+      [mango-6]     Navbar tweaks
+      [mango-7]     Custom things
+      [mango-8]     Footer tweaks
+      [mango-9]     Media lists
+      [mango-10]    Favourites
+      [mango-11]    Social
+      [mango-12]    Stats
+      [mango-999]   Personal tweaks
+
+*/
+
+
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Patrick+Hand+SC&display=swap');
+
+/*========================
+    Customizable parts
+==========================*/
+
+
+/*
+    How to customize the theme:
+    - Import it from Github
+    - Make a :root block, and take a look at the Gruvbox theme I made for reference (The example below)
+    - Copy the variables from there into the :root block, and edit them to your liking
+
+    Below are all the variables available.
+*/
+
+:root {
+    /* Colors */
+    --mango-dark0_hard: 29, 32, 33;
+    --mango-dark0: 40, 40, 40;
+    --mango-dark0_soft: 50, 48, 47;
+    --mango-dark1: 60, 56, 54;
+    --mango-dark2: 80, 73, 69;
+    --mango-dark3: 102, 92, 84;
+    --mango-dark4: 124, 111, 100;
+    --mango-dark4_256: 124, 111, 100;
+    --mango-gray_245: 146, 131, 116;
+    --mango-gray_244: 146, 131, 116;
+    --mango-light0_hard: 249, 245, 215;
+    --mango-light0: 253, 244, 193;
+    --mango-light0_soft: 242, 229, 188;
+    --mango-light1: 235, 219, 178;
+    --mango-light2: 213, 196, 161;
+    --mango-light3: 189, 174, 147;
+    --mango-light4: 168, 153, 132;
+    --mango-light4_256: 168, 153, 132;
+    --mango-bright_red: 251, 73, 52;
+    --mango-bright_green: 184, 187, 38;
+    --mango-bright_yellow: 250, 189, 47;
+    --mango-bright_blue: 131, 165, 152;
+    --mango-bright_purple: 211, 134, 155;
+    --mango-bright_aqua: 142, 192, 124;
+    --mango-bright_orange: 254, 128, 25;
+    --mango-neutral_red: 204, 36, 29;
+    --mango-neutral_green: 152, 151, 26;
+    --mango-neutral_yellow: 215, 153, 33;
+    --mango-neutral_blue: 69, 133, 136;
+    --mango-neutral_purple: 177, 98, 134;
+    --mango-neutral_aqua: 104, 157, 106;
+    --mango-neutral_orange: 214, 93, 14;
+    --mango-faded_red: 157, 0, 6;
+    --mango-faded_green: 121, 116, 14;
+    --mango-faded_yellow: 181, 118, 20;
+    --mango-faded_blue: 7, 102, 120;
+    --mango-faded_purple: 143, 63, 113;
+    --mango-faded_aqua: 66, 123, 88;
+    --mango-faded_orange: 175, 58, 3;
+    /* Features */
+    --mango-background: unset;
+    --mango-background-blur: unset;
+    --mango-curvy-elements: 0;
+    /* Custom text */
+    --header-feed: "Shitty posts";
+    --header-history: "History";
+    --header-fav_anime: "Favorite anime";
+    --header-fav_manga: "Favorite manga";
+    --header-fav_character: "Favorite characters";
+    --header-fav_staff: "People I like";
+    --header-fav_studio: "Favorite studios";
+    --load_more: "Load more degeneration";
+    /* Custom AL logo in the navbar */
+    --nav-custom_logo-dark: url(https://files.weebsquad.moe/DxZ2O6A2.png);
+    --nav-custom_logo-light: url(https://files.weebsquad.moe/DxZ2O6A2.png);
+}
+
+
+/*========================================
+     DON'T CHANGE ANYTHING BELOW THIS
+    (Unless you know what you are doing)
+==========================================*/
+
+
+/*
+    [mango-1] Colors and fonts
+*/
+
+:root,
+.site-theme-contrast {
+    --color-background: var(--color-background-200);
+    --color-foreground: var(--color-background-400);
+    --color-foreground-grey: var(--mango-light3);
+    --color-foreground-grey-dark: var(--mango-light2);
+    --color-foreground-blue: 246, 248, 251;
+    --color-foreground-blue-dark: 241, 243, 247;
+    --color-background-blue-dark: 31, 35, 45;
+    --color-overlay: 31, 38, 49;
+    --color-shadow: 49, 54, 68;
+    --color-shadow-dark: 6, 13, 34;
+    --color-shadow-blue: var(--color-background-600);
+    --color-text: var(--mango-gray_245);
+    --color-text-light: var(--mango-gray_244);
+    --color-text-lighter: var(--mango-light2);
+    --color-text-bright: var(--mango-light1);
+    --color-blue: var(--mango-bright_blue);
+    --color-blue-dim: var(--mango-neutral_blue);
+    --color-white: 255, 255, 255;
+    --color-black: 0, 0, 0;
+    --color-red: var(--mango-bright_red);
+    --color-peach: var(--mango-bright_purple);
+    --color-orange: var(--mango-bright_orange);
+    --color-yellow: var(--mango-bright_yellow);
+    --color-green: var(--mango-bright_aqua);
+    --color-background-100: var(--mango-light0_hard);
+    --color-background-200: var(--mango-light0);
+    --color-background-300: var(--mango-light0_soft);
+    --color-background-400: var(--mango-light1);
+    --color-background-500: var(--mango-light2);
+    --color-background-600: var(--mango-light3);
+    --color-background-700: var(--mango-light4);
+    --color-background-800: var(--mango-light4_256);
+    --color-border: var(--color-foreground-grey);
+}
+
+.site-theme-dark {
+    --color-background: var(--color-background-200);
+    --color-foreground: var(--color-background-400);
+    --color-foreground-grey: var(--color-background-600);
+    --color-foreground-grey-dark: var(--color-background-500);
+    --color-foreground-blue: 246, 248, 251;
+    --color-foreground-blue-dark: 241, 243, 247;
+    --color-background-blue-dark: 31, 35, 45;
+    --color-overlay: var(--color-background-400);
+    --color-shadow: var(--color-background-400);
+    --color-shadow-dark: 6, 13, 34;
+    --color-shadow-blue: var(--color-background-600);
+    --color-text: var(--mango-gray_245);
+    --color-text-light: var(--mango-gray_244);
+    --color-text-lighter: var(--mango-light2);
+    --color-text-bright: var(--mango-light1);
+    --color-blue: var(--mango-bright_blue);
+    --color-blue-dim: var(--mango-neutral_blue);
+    --color-white: 255, 255, 255;
+    --color-black: 0, 0, 0;
+    --color-red: var(--mango-bright_red);
+    --color-peach: var(--mango-bright_purple);
+    --color-orange: var(--mango-bright_orange);
+    --color-yellow: var(--mango-bright_yellow);
+    --color-green: var(--mango-bright_aqua);
+    --color-background-100: var(--mango-dark0_hard);
+    --color-background-200: var(--mango-dark0);
+    --color-background-300: var(--mango-dark0_soft);
+    --color-background-400: var(--mango-dark1);
+    --color-background-500: var(--mango-dark2);
+    --color-background-600: var(--mango-dark3);
+    --color-background-700: var(--mango-dark4);
+    --color-background-800: var(--mango-dark4_256);
+    --color-border: var(--color-foreground-grey);
+}
+
+body,
+#app>.wrap>.footer .theme-selector .theme-preview,
+#app .tooltip,
+.stats-wrap>.stat>.label,
+time,
+.el-dropdown-menu__item,
+input,
+textarea,
+.favourites>.favourites .favourite.studio,
+.user-follow .follow-card .name,
+.filter-group .stats-wrap,
+.stats-wrap .label,
+.stats-wrap .value,
+.filter-group a,
+.switch {
+    font-family: "Neucha" !important;
+}
+
+.section-header,
+#app>.wrap>.footer .theme-selector>h2,
+#app .tooltip .title,
+#nav .links,
+.stats-wrap>.stat>.value,
+.load-more,
+.header-wrap,
+.lists h3.section-name,
+.filter-group .group-header,
+.stats-wrap .value,
+.stats-wrap h3,
+.pie-chart .title,
+.stat-card h2 {
+    font-family: "Patrick Hand SC" !important;
+}
+
+body,
+.filter-group .group-header {
+    font-size: 1.7rem;
+}
+
+.stats-wrap>.stat>.label {
+    font-size: 1.3rem;
+}
+
+.header-wrap .actions>.nav-btn,
+.header-wrap .nav .link,
+.stats-wrap>.stat>.value {
+    font-size: 1.8rem;
+}
+
+.load-more,
+#nav .links,
+#app .tooltip .title {
+    font-size: 2rem !important;
+}
+
+.stat-card h2,
+.pie-chart .title,
+.stats-wrap h3,
+.lists h3.section-name {
+    font-size: 2.5rem !important;
+}
+
+.section-header {
+    font-weight: 700 !important;
+    font-size: 2rem;
+}
+
+#app>.wrap>.footer .theme-selector>h2,
+.header-wrap .name {
+    font-weight: 700 !important;
+    font-size: 3rem;
+}
+
+
+/*
+    [mango-2] Manga styled elements
+*/
+
+
+/* Remove default styling */
+
+.overview>.section>.desktop>.content-wrap {
+    background: none;
+    margin: 0 !important;
+}
+
+.overview>.section>.desktop,
+.favourites>.favourites {
+    background: rgb(var(--color-foreground))
+}
+
+
+/* Manga styling */
+
+.user .about>div.content-wrap,
+.overview>.section>.desktop,
+.activity-entry .wrap,
+.el-input,
+.el-textarea,
+.markdown-editor,
+.list-stats>.stats-wrap,
+.history-day,
+.favourites .favourite,
+.nav-btn,
+.actions>.button,
+.dropdown,
+.activity-entry .reply,
+.load-more,
+.medialist.table .list-section,
+.filter-group.compare-btn,
+.filter-group>span.active,
+.favourites>.favourites,
+.favourites>.favourites .actions>div,
+.theme-switch,
+.user-follow .follow-card,
+.medialist.table .entry .edit,
+.filter-group a.router-link-active,
+.circle,
+.switch,
+.switch .option.active,
+.bar-chart-wrap,
+.bar-chart-wrap .bar,
+.draggable .horizontal-scroller,
+.labels .label-wrap,
+.pie-charts>.pie-chart,
+.stat-card,
+.stat-card .relation-card a,
+.stat-card.has-image>.wrap>.image {
+    position: relative;
+    transition: all 235ms ease 0s !important;
+    box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%) !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: rgba(var(--color-border)) !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements)) !important;
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+}
+
+.user .about>div.content-wrap:hover,
+.overview>.section>.desktop:hover,
+.activity-entry .wrap:hover,
+.el-input:hover,
+.el-textarea:hover,
+.markdown-editor:hover,
+.list-stats>.stats-wrap:hover,
+.history-day:hover,
+.favourites .favourite:hover,
+.nav-btn:hover,
+.actions>.button:hover,
+.dropdown:hover,
+.activity-entry .reply:hover,
+.load-more:hover,
+.medialist.table .list-section:hover,
+.filter-group.compare-btn:hover,
+.filter-group>span.active:hover,
+.favourites>.favourites:hover,
+.favourites>.favourites .actions>div:hover,
+.theme-switch:hover,
+.user-follow .follow-card:hover,
+.medialist.table .entry .edit:hover,
+.filter-group a.router-link-active:hover,
+.circle:hover,
+.switch:hover,
+.switch .option.active:hover,
+.bar-chart-wrap:hover,
+.draggable .horizontal-scroller:hover,
+.labels .label-wrap:hover,
+.pie-charts>.pie-chart:hover,
+.stat-card:hover,
+.stat-card .relation-card a:hover {
+    transform: translate3d(0, 2px, 0);
+    box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+
+@media (max-width: 1540px) {
+    .section>.stats-wrap>.list-stats>.stats-wrap {
+        border-radius: 0 !important;
+        box-shadow: none;
+        border: none;
+    }
+    .section>.stats-wrap>.list-stats>.stats-wrap:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .section>.stats-wrap {
+        position: relative;
+        transition: all 235ms ease 0s !important;
+        box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-color: rgba(var(--color-border));
+        border-width: 2px;
+        border-style: solid;
+        border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements)) !important;
+        border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+        border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+        border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+        overflow: hidden;
+    }
+    .section>.stats-wrap:hover {
+        transform: translate3d(0, 2px, 0);
+        box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+    }
+}
+
+.history-day {
+    border: none;
+}
+
+.header-wrap .actions>.dropdown {
+    margin: 0;
+    background: rgb(var(--color-background));
+}
+
+
+/*
+    [mango-3] Header tweaks
+*/
+
+.user-page-unscoped {
+    padding-top: 105px
+}
+
+.header-wrap {
+    transition: all 235ms ease 0s;
+    box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(var(--color-border));
+    position: relative;
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements));
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements));
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements));
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements));
+    margin: 0 30px 0 30px;
+    overflow: hidden;
+}
+
+.header-wrap:hover {
+    transform: translate3d(0, 2px, 0);
+    box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+
+.banner .container {
+    position: initial !important;
+}
+
+
+/* Following badge */
+
+.header-wrap .follower-badge {
+    color: rgb(var(--color-text-lighter));
+    position: absolute;
+    top: calc(var(--mango-curvy-elements) * 10px + 5px);
+    left: calc(var(--mango-curvy-elements) * 10px + 5px);
+    border-color: rgba(var(--color-border));
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements)) !important;
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+}
+
+
+/* Follow button */
+
+.header-wrap .actions>.nav-btn {
+    background: rgb(var(--color-blue));
+    color: rgb(var(--color-text-bright));
+    width: 100px;
+}
+
+
+/* Dropdown */
+
+.header-wrap .actions .dropdown.el-dropdown {
+    border-radius: 50% !important;
+    margin-left: 15px;
+    padding: 0;
+    position: relative;
+}
+
+
+/* Navigation */
+
+.header-wrap .nav-wrap {
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+    border-top: 2px solid rgb(var(--color-border));
+}
+
+
+/*
+    [mango-4] Remove unnecessary elements
+*/
+
+.overview>.section>.desktop:nth-of-type(3),
+.list-stats>.footer,
+.el-popper .popper__arrow,
+#nav .browse-wrap .dropdown,
+#nav .browse-wrap::after,
+.dropdown:before,
+#app>.wrap>.footer .theme-selector .theme-preview:nth-of-type(3),
+#app>.wrap>.footer .theme-selector .theme-preview:nth-of-type(4),
+.el-tooltip__popper .popper__arrow,
+.el-tooltip__popper .popper__arrow:after,
+#app .tooltip::after {
+    display: none;
+}
+
+
+/*
+    [mango-5] Various random tweaks
+*/
+
+.stats-wrap>.list-stats {
+    background: none !important;
+}
+
+.stats-wrap>.list-stats>.stats-wrap {
+    background: rgba(var(--color-foreground));
+}
+
+.site-theme-dark .quick-search.el-select .el-input.el-input__inner,
+.site-theme-dark .quick-search .el-select .el-input.is-focus .el-input__inner,
+.site-theme-dark .el-select-dropdown,
+.site-theme-dark .el-dropdown-menu,
+.site-theme-dark .el-dropdown-menu__item--divided::before {
+    background: rgba(var(--color-background));
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements));
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements));
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements));
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements));
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(var(--color-border));
+    padding: 0;
+}
+
+.overview>.section>.desktop>.content-wrap {
+    transform: skew(calc(var(--mango-curvy-elements) * 4deg), calc(var(--mango-curvy-elements) * -1deg))
+}
+
+
+/* Change default image of favourites */
+
+.favourite[style='background-image: url("https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg");'] {
+    background-image: none !important;
+    background-color: rgba(var(--color-background-100)) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favourite[style='background-image: url("https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg");']::after {
+    content: "?";
+    font-family: "Neucha";
+    font-size: 7rem;
+}
+
+
+/* Fix hoh's studio icons */
+
+.site-theme-dark .overview .favourite.studio {
+    background-color: rgba(var(--color-background-100)) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Neucha";
+    font-size: 1.6rem;
+}
+
+.overview .favourite.studio::after {
+    margin: 0;
+    width: 90%;
+    background-size: contain;
+}
+
+
+/* Fix divided dropdowns having a white divider */
+
+.el-dropdown-menu__item--divided {
+    border-top: none;
+}
+
+
+/* Fix section headers */
+
+.desktop>.section-header {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 20px !important;
+    margin-top: 20px !important;
+}
+
+
+/* Fix favourites being borked */
+
+.overview .favourites>.favourites-wrap {
+    width: 420px;
+    margin: 10px auto 25px auto !important;
+}
+
+.activity-feed-wrap>.section-header {
+    font-size: 0;
+}
+
+.activity-feed-wrap>.section-header>.el-dropdown {
+    font-size: 1.3rem;
+}
+
+
+/* Fix favourite hover */
+
+.favourites .favourite:hover {
+    color: rgb(var(--color-text));
+}
+
+
+/* AniList is dumb. Remove the double layer from text inputs. */
+
+.el-input-group__append,
+.el-input-group__prepend,
+.el-input__inner,
+.el-textarea__inner {
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+
+/* Fuck overflow. */
+
+.list-stats,
+.favourites-wrap {
+    overflow: visible !important;
+}
+
+.page-content {
+    background: var(--mango-background) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+.user-page-unscoped {
+    backdrop-filter: blur(var(--mango-background-blur));
+}
+
+
+/* Section header fix */
+
+.section>.desktop:not(:nth-of-type(2))>.section-header {
+    margin-bottom: 20px !important;
+}
+
+
+/* Tooltips */
+
+#app .tooltip {
+    background: rgb(var(--color-background)) !important;
+    border-color: rgba(var(--color-border));
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements)) !important;
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+}
+
+#app .tooltip .title {
+    background: none;
+}
+
+
+/*
+    [mango-6] Navbar tweaks
+*/
+
+.nav-unscoped.transparent,
+.nav-unscoped {
+    top: 0 !important;
+    background: rgb(var(--color-foreground)) !important;
+    margin: 15px 0 0 30px !important;
+    width: calc(100% - 60px) !important;
+    border-color: rgba(var(--color-border)) !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements)) !important;
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+    color: rgb(var(--color-text)) !important;
+}
+
+#nav:hover {
+    background: rgb(var(--color-background)) !important;
+    color: rgb(var(--color-text)) !important;
+}
+
+#nav .links .link:hover {
+    color: rgb(var(--color-text-lighter));
+}
+
+
+/*
+    [mango-7] Custom things
+*/
+
+
+/* Activity feed header */
+
+.activity-feed-wrap>.section-header::before {
+    content: var(--header-feed);
+    font-size: 1.4rem;
+}
+
+
+/* Activity history header */
+
+.section>.desktop:nth-of-type(2)>.section-header {
+    font-size: 0;
+}
+
+.section>.desktop:nth-of-type(2)>.section-header::before {
+    content: var(--header-history);
+    font-size: 2rem;
+}
+
+
+/* Favorite anime header */
+
+.section>.desktop:nth-of-type(4)>.section-header,
+.favourites>.favourites:nth-of-type(1)>.section-header {
+    font-size: 0;
+}
+
+.section>.desktop:nth-of-type(4)>.section-header::before,
+.favourites>.favourites:nth-of-type(1)>.section-header::before {
+    content: var(--header-fav_anime);
+    font-size: 2rem;
+}
+
+
+/* Favorite manga header */
+
+.section>.desktop:nth-of-type(5)>.section-header,
+.favourites>.favourites:nth-of-type(2)>.section-header {
+    font-size: 0;
+}
+
+.section>.desktop:nth-of-type(5)>.section-header::before,
+.favourites>.favourites:nth-of-type(2)>.section-header::before {
+    content: var(--header-fav_manga);
+    font-size: 2rem;
+}
+
+
+/* Favorite character header */
+
+.section>.desktop:nth-of-type(6)>.section-header,
+.favourites>.favourites:nth-of-type(3)>.section-header {
+    font-size: 0;
+}
+
+.section>.desktop:nth-of-type(6)>.section-header::before,
+.favourites>.favourites:nth-of-type(3)>.section-header::before {
+    content: var(--header-fav_character);
+    font-size: 2rem;
+}
+
+
+/* Favorite staff header */
+
+.section>.desktop:nth-of-type(7)>.section-header,
+.favourites>.favourites:nth-of-type(4)>.section-header {
+    font-size: 0;
+}
+
+.section>.desktop:nth-of-type(7)>.section-header::before,
+.favourites>.favourites:nth-of-type(4)>.section-header::before {
+    content: var(--header-fav_staff);
+    font-size: 2rem;
+}
+
+
+/* Favorite studio header */
+
+.section>.desktop:nth-of-type(8)>.section-header,
+.favourites>.favourites:nth-of-type(5)>.section-header {
+    font-size: 0;
+}
+
+.section>.desktop:nth-of-type(8)>.section-header::before,
+.favourites>.favourites:nth-of-type(5)>.section-header::before {
+    content: var(--header-fav_studio);
+    font-size: 2rem;
+}
+
+
+/* Load more */
+
+.load-more {
+    font-size: 0 !important;
+}
+
+.load-more::before {
+    content: var(--load_more);
+    font-size: 2rem;
+}
+
+
+/* Custom AL logo */
+
+#nav .logo img,
+.site-theme-contrast #nav .logo img {
+    content: var(--nav-custom_logo-light);
+}
+
+.site-theme-dark #nav .logo img {
+    content: var(--nav-custom_logo-dark);
+}
+
+
+/*
+    [mango-8] Footer
+*/
+
+#app>.page-content {
+    padding-bottom: 40px;
+}
+
+#app>.wrap {
+    margin-top: 0;
+}
+
+#app>.wrap>.footer {
+    background: rgba(var(--color-background-100));
+    border-top: 2px solid rgba(var(--color-border));
+}
+
+
+/* Site theme selector */
+
+#app>.wrap>.footer .theme-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+#app>.wrap>.footer .theme-selector>h2 {
+    color: rgb(var(--color-blue));
+}
+
+#app>.wrap>.footer .theme-selector .theme-preview {
+    background: none;
+    border: none;
+    font-size: 0;
+    margin-bottom: 15px;
+}
+
+#app>.wrap>.footer .theme-selector .theme-preview::after {
+    font-size: 2rem;
+    padding: 5px 10px;
+}
+
+#app>.wrap>.footer .theme-selector .theme-preview:nth-of-type(1)::after {
+    content: "Light";
+    color: rgba(var(--color-background));
+    background: rgba(var(--mango-light3));
+}
+
+#app>.wrap>.footer .theme-selector .theme-preview:nth-of-type(2)::after {
+    content: "Dark";
+    color: rgba(var(--color-text-bright));
+    background: rgba(var(--mango-dark3));
+}
+
+
+/*
+    [mango-9] Media lists
+*/
+
+.medialist.table .entry .cover .image {
+    transition: left .2s .2s ease-in-out;
+    left: -70px;
+    border-color: rgba(var(--color-border));
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements)) !important;
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+}
+
+.medialist.table .entry:hover .cover .image {
+    left: -80px;
+    opacity: 0;
+    animation: coverImage .25s .2s ease-in-out forwards;
+    border-color: rgba(var(--color-border));
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: calc(15px * var(--mango-curvy-elements)) calc(255px * var(--mango-curvy-elements)) !important;
+    border-bottom-right-radius: calc(225px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-left-radius: calc(255px * var(--mango-curvy-elements)) calc(15px * var(--mango-curvy-elements)) !important;
+    border-top-right-radius: calc(15px * var(--mango-curvy-elements)) calc(225px * var(--mango-curvy-elements)) !important;
+}
+
+.filter-group>span {
+    position: relative;
+    transition: all 235ms ease 0s !important;
+    box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    padding: 5px;
+}
+
+.filter-group>span>.count {
+    right: 5px !important;
+}
+
+.medialist.table .entry .edit {
+    transition: left .2s .2s ease-in-out, box-shadow 235ms ease 0s, transform 235ms ease 0s !important;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: -70px;
+    top: -70px;
+    background: rgba(var(--color-overlay));
+    width: 30px;
+    height: 30px;
+}
+
+.medialist.table .entry:hover .edit {
+    animation: coverImage .25s .2s ease-in-out forwards;
+    pointer-events: initial;
+    left: -90px;
+    top: -70px;
+}
+
+@keyframes coverImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*
+    [mango-10] Favourites
+*/
+
+
+/* Fix padding */
+
+.favourites>.favourites {
+    padding: 10px 20px 0 20px;
+}
+
+
+/* Studio fix, thanks hoh */
+
+.favourites>.favourites .favourite.studio {
+    cursor: pointer;
+    height: 115px;
+    width: 85px;
+    padding: 2px!important;
+    padding-top: 8px!important;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(var(--color-background-100)) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+
+/* Reorder button */
+
+.favourites>.favourites .actions>div {
+    color: rgb(var(--color-text-bright));
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+/*
+    [mango-11] Social
+*/
+
+
+/* Man, FUCK overflow. */
+
+.user-follow .follow-card {
+    overflow: visible;
+}
+
+
+/* Man, FUCK sizing stuff properly. */
+
+.user-follow .follow-card .avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.user-follow .follow-card .name:hover,
+.user-follow .follow-card .name {
+    color: rgb(var(--color-text-bright));
+}
+
+
+/*
+    [mango-12] Stats
+*/
+
+.switch .option,
+.filter-group a {
+    position: relative;
+    box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    padding: 5px;
+}
+
+.switch {
+    height: 40px !important;
+}
+
+.switch .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-chart-wrap .bar {
+    border-bottom: none !important;
+}
+
+.line-chart-wrap .area {
+    fill: rgba(var(--color-background-100), .6);
+}
+
+.line-chart-wrap .x-axis,
+.bar-chart-wrap .x-axis {
+    border-top: solid 2px rgb(var(--color-border));
+}
+
+.labels .label-wrap .percent {
+    border-radius: 0;
+}
+
+.relations-inner-wrap {
+    overflow: visible !important;
+}
+
+
+/*
+    [mango-999] Personal tweaks
+
+    You can safely remove this part. It's some small tweaks I made
+    that are basically mostly only for my profile.
+*/
+
+
+/* Remove the last .desktop element, it's always empty for me anyways */
+
+.overview>.section>.desktop:last-of-type {
+    display: none;
+}
+
+
+/* .history-day should have a pointer cursor, cause of hoh's script */
+
+.history-day:not(.lv-0) {
+    cursor: pointer;
+}
+
+.about .content-wrap .markdown {
+    overflow: visible !important;
+}
+
+
+/* Add epic effects to the "buttons" in my bio */
+
+.about .markdown a>img {
+    transition: all 235ms ease 0s;
+    filter: drop-shadow(3px 10px 8px rgb(0 0 0 / 30%));
+    position: relative;
+}
+
+.about .markdown a>img:hover {
+    transform: translate3d(0, 2px, 0);
+    filter: drop-shadow(2px 5px 5px rgb(0 0 0 / 40%));
+}
+
+
+/* Remove navigation links I never use so others also don't have a use for them */
+
+
+/* You should remove this if you do reviews/submissions. */
+
+.header-wrap .nav .link:nth-of-type(7),
+
+/* Reviews */
+
+.header-wrap .nav .link:nth-of-type(8)
+/* Submissions */
+
+{
+    display: none;
+}
