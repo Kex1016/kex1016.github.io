@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <TerminalPrompt dir="~" user="cakes">
+      <span class="color0"># This is the end of the page.</span>
+    </TerminalPrompt>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import TerminalPrompt from "@/components/Terminal/TerminalPrompt.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    TerminalPrompt,
   },
 };
 </script>
